@@ -16,6 +16,9 @@ jobs:
         with:
           python-version: '3.8'
           
+      - name: Install Jupyter
+        run:  python3 -m pip install jupyter
+          
       - name: Check out repository
         uses: actions/checkout@v2
 
