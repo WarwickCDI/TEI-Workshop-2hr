@@ -8,7 +8,7 @@ format:
     width: 1920
     height: 1080
     logo: "../images/cdi_logo.png"
-    footer: "slide_url"
+    footer: "https://warwickcdi.github.io/TEI-Workshop-2hr/materials/slides/introduction.html"
     css: ["theme/theme.css"]
 editor: source
 ---
@@ -21,29 +21,64 @@ editor: source
 
 # Why
 
-## Documents to Data
+## Text Encoding
 
-* Digital Editions of documents are becoming more common
-* For example:
-  * [William Godwins Diary](http://godwindiary.bodleian.ox.ac.uk/index2.html)
-  * [Jane Austen's Fictional Manuscripts](https://janeausten.ac.uk/about/overview.html)
-  * 
+* What is text encoding?
+
+. . .
+
+* [William Godwins Diary](http://godwindiary.bodleian.ox.ac.uk/index2.html)
+
+. . .
+
+* [Jane Austen's Fictional Manuscripts](https://janeausten.ac.uk/about/overview.html)
+
+. . .
+
+* [Another example]() 
   
-## Digital scholarship
+And far more.
+  
+## But, why?
 
-* Lots of user benefits
-  * Easy to archive and share
-  * Searchable
-  * Provide means for 
+Academic resources are often encoded into a digital text form.
+
+For example,
+
+* Historical literature
+* Speeches
+* Poetry
+
+. . .
+
+allowing easy searching, distribution, archiving, computational analysis and
+the inclusion of additional information.
 
 ## The challenge
 
+* Finding a text format and rules
+* Deciding what to include
+* Using software to help you out
+
+# Text Encoding Initiative
+
+## Community help
+
+* Our format is XML
+* The TEI consortium provide rules (or, rather, [guidelines](https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html))
+* There is an active community (e.g., recent TEI 2022 conference, [@TEI2022](https://twitter.com/TEI2022))
+
+## What?
 
 
-* Text Encoding Initiative 
 
-## First slide
-
-* Topic 1
-* Topic 2
-* Topic 3
+```{xml}
+<lg type="sestet" rhyme="ababab">
+  <l>I saw my soul at rest upon a <rhyme label="a" xml:id="A">day</rhyme></l>
+  <l>As a bird sleeping in the nest of <rhyme label="b" xml:id="B">night</rhyme>,</l>
+  <l>Among soft leaves that give the starlight <rhyme label="a" xml:id="C">way</rhyme></l>
+  <l>To touch its wings but not its eyes with <rhyme label="b" xml:id="D">light</rhyme>;</l>
+  <l>So that it knew as one in visions <rhyme label="a" xml:id="E">may</rhyme>,</l>
+  <l>And knew not as men waking, of <rhyme label="b" xml:id="F">delight</rhyme>.</l>
+</lg>
+```
