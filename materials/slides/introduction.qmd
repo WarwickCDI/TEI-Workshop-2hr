@@ -1,6 +1,6 @@
 ---
-title: "Presentation Title"
-author: "Presenter"
+title: "Introduction to TEI"
+author: "James Tripp"
 institute: University of Warwick
 format: 
   revealjs:
@@ -13,7 +13,34 @@ format:
 editor: source
 ---
 
-# Introductions
+# Plan
+
+* Why?
+* TEI
+* Editors
+
+# Why
+
+## Documents to Data
+
+* Digital Editions of documents are becoming more common
+* For example:
+  * [William Godwins Diary](http://godwindiary.bodleian.ox.ac.uk/index2.html)
+  * [Jane Austen's Fictional Manuscripts](https://janeausten.ac.uk/about/overview.html)
+  * 
+  
+## Digital scholarship
+
+* Lots of user benefits
+  * Easy to archive and share
+  * Searchable
+  * Provide means for 
+
+## The challenge
+
+
+
+* Text Encoding Initiative 
 
 ## First slide
 

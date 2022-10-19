@@ -29,7 +29,15 @@ format: html
 
 ## Overview
 
-Here is an outline of the workshop
+In this workshop
+
+Consideration of how we encode your interpretation of materials.
+
+Turning text into digital editions.
+
+http://dh.obdurodon.org/what-is-xml.xhtml
+
+
 
 ### Schedule
 
