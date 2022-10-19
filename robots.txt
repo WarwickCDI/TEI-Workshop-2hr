@@ -1,0 +1,1 @@
+Sitemap: https://github.com/WarwickCDI/TEI-Workshop-2hr/sitemap.xml
