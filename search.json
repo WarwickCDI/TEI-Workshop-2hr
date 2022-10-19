@@ -11,7 +11,7 @@
     "href": "index.html#overview",
     "title": "Outline",
     "section": "Overview",
-    "text": "Overview\nHere is an outline of the workshop\n\nSchedule\n\n\n\n\n\nActivity\nTime\n\n\n\n\nActivity 1\n30 mins\n\n\nActivity 2\n10 mins"
+    "text": "Overview\nIn this workshop\nConsideration of how we encode your interpretation of materials.\nTurning text into digital editions.\nhttp://dh.obdurodon.org/what-is-xml.xhtml\n\nSchedule\n\n\n\n\n\nActivity\nTime\n\n\n\n\nActivity 1\n30 mins\n\n\nActivity 2\n10 mins"
   },
   {
     "objectID": "index.html#learning-objectives",
@@ -28,9 +28,30 @@
     "text": "Instructor\n\n\nJames Tripp is a Senior Research Software Engineer at the University of Warwick. He has been working at the intersection of research and technology for over 10 years.\nTwitter: @jamestripp_ Email: james.tripp@warwick.ac.uk\n\n\n\n\n\n\n\n\n\n\n This work is licensed under a Creative Commons Attribution 4.0 International License."
   },
   {
+    "objectID": "materials/slides/introduction.html#documents-to-data",
+    "href": "materials/slides/introduction.html#documents-to-data",
+    "title": "Introduction to TEI",
+    "section": "Documents to Data",
+    "text": "Documents to Data\n\nDigital Editions of documents are becoming more common\nFor example:\n\nWilliam Godwins Diary\nJane Austen’s Fictional Manuscripts"
+  },
+  {
+    "objectID": "materials/slides/introduction.html#digital-scholarship",
+    "href": "materials/slides/introduction.html#digital-scholarship",
+    "title": "Introduction to TEI",
+    "section": "Digital scholarship",
+    "text": "Digital scholarship\n\nLots of user benefits\n\nEasy to archive and share\nSearchable\nProvide means for"
+  },
+  {
+    "objectID": "materials/slides/introduction.html#the-challenge",
+    "href": "materials/slides/introduction.html#the-challenge",
+    "title": "Introduction to TEI",
+    "section": "The challenge",
+    "text": "The challenge\n\nText Encoding Initiative"
+  },
+  {
     "objectID": "materials/slides/introduction.html#first-slide",
     "href": "materials/slides/introduction.html#first-slide",
-    "title": "Presentation Title",
+    "title": "Introduction to TEI",
     "section": "First slide",
     "text": "First slide\n\nTopic 1\nTopic 2\nTopic 3\n\n\n\n\nslide_url"
   }
