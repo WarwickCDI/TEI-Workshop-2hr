@@ -42,12 +42,16 @@ Here is an outline of the workshop
 
 ## Learning objectives
 
--   Objective 1
--   Objective 2
+-   Use the Oxygen XML software to create a TEI encoded document
+-   Understand fundamental XML tags
+-   Consider how TEI can academic work
 
 ## Instructor
 
-Here are your details
+James Tripp is a Senior Research Software Engineer at the University of Warwick. He started as a cognitive psychologist, then an academic technologist in an interdisciplinary centre, and now works within the Information and Digital Group.
+
+Twitter: [@jamestripp_](https://twitter.com/jamestripp_)
+Email: [james.tripp\@warwick.ac.uk](mailto:james.tripp@warwick.ac.uk)
 
 ------------------------------------------------------------------------
 
