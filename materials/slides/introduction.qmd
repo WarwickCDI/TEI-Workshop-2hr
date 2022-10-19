@@ -75,6 +75,8 @@ the inclusion of additional information.
 
 
 ```{xml}
+#| echo: false
+#| output: asis
 <lg type="sestet" rhyme="ababab">
   <l>I saw my soul at rest upon a <rhyme label="a" xml:id="A">day</rhyme></l>
   <l>As a bird sleeping in the nest of <rhyme label="b" xml:id="B">night</rhyme>,</l>
