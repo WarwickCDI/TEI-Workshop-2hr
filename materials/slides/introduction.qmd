@@ -78,9 +78,5 @@ the inclusion of additional information.
 <lg type="sestet" rhyme="ababab">
   <l>I saw my soul at rest upon a <rhyme label="a" xml:id="A">day</rhyme></l>
   <l>As a bird sleeping in the nest of <rhyme label="b" xml:id="B">night</rhyme>,</l>
-  <l>Among soft leaves that give the starlight <rhyme label="a" xml:id="C">way</rhyme></l>
-  <l>To touch its wings but not its eyes with <rhyme label="b" xml:id="D">light</rhyme>;</l>
-  <l>So that it knew as one in visions <rhyme label="a" xml:id="E">may</rhyme>,</l>
-  <l>And knew not as men waking, of <rhyme label="b" xml:id="F">delight</rhyme>.</l>
 </lg>
 ```
