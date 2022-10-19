@@ -2,6 +2,8 @@
 title: "Introduction to TEI"
 author: "James Tripp"
 institute: University of Warwick
+execute: 
+  eval: false
 format: 
   revealjs:
     slide-number: true
