@@ -28,31 +28,38 @@
     "text": "Instructor\n\n\nJames Tripp is a Senior Research Software Engineer at the University of Warwick. He has been working at the intersection of research and technology for over 10 years.\nTwitter: @jamestripp_ Email: james.tripp@warwick.ac.uk\n\n\n\n\n\n\n\n\n\n\n This work is licensed under a Creative Commons Attribution 4.0 International License."
   },
   {
-    "objectID": "materials/slides/introduction.html#documents-to-data",
-    "href": "materials/slides/introduction.html#documents-to-data",
+    "objectID": "materials/slides/introduction.html#text-encoding",
+    "href": "materials/slides/introduction.html#text-encoding",
     "title": "Introduction to TEI",
-    "section": "Documents to Data",
-    "text": "Documents to Data\n\nDigital Editions of documents are becoming more common\nFor example:\n\nWilliam Godwins Diary\nJane Austen’s Fictional Manuscripts"
+    "section": "Text Encoding",
+    "text": "Text Encoding\n\nWhat is text encoding?\n\n\n\nWilliam Godwins Diary\n\n\n\n\nJane Austen’s Fictional Manuscripts\n\n\n\n\nAnother example\n\nAnd far more."
   },
   {
-    "objectID": "materials/slides/introduction.html#digital-scholarship",
-    "href": "materials/slides/introduction.html#digital-scholarship",
+    "objectID": "materials/slides/introduction.html#but-why",
+    "href": "materials/slides/introduction.html#but-why",
     "title": "Introduction to TEI",
-    "section": "Digital scholarship",
-    "text": "Digital scholarship\n\nLots of user benefits\n\nEasy to archive and share\nSearchable\nProvide means for"
+    "section": "But, why?",
+    "text": "But, why?\nAcademic resources are often encoded into a digital text form.\nFor example,\n\nHistorical literature\nSpeeches\nPoetry\n\n\nallowing easy searching, distribution, archiving, computational analysis and the inclusion of additional information."
   },
   {
     "objectID": "materials/slides/introduction.html#the-challenge",
     "href": "materials/slides/introduction.html#the-challenge",
     "title": "Introduction to TEI",
     "section": "The challenge",
-    "text": "The challenge\n\nText Encoding Initiative"
+    "text": "The challenge\n\nFinding a text format and rules\nDeciding what to include\nUsing software to help you out"
   },
   {
-    "objectID": "materials/slides/introduction.html#first-slide",
-    "href": "materials/slides/introduction.html#first-slide",
+    "objectID": "materials/slides/introduction.html#community-help",
+    "href": "materials/slides/introduction.html#community-help",
     "title": "Introduction to TEI",
-    "section": "First slide",
-    "text": "First slide\n\nTopic 1\nTopic 2\nTopic 3\n\n\n\n\nslide_url"
+    "section": "Community help",
+    "text": "Community help\n\nOur format is XML\nThe TEI consortium provide rules (or, rather, guidelines)\nThere is an active community (e.g., recent TEI 2022 conference, @TEI2022)"
+  },
+  {
+    "objectID": "materials/slides/introduction.html#what",
+    "href": "materials/slides/introduction.html#what",
+    "title": "Introduction to TEI",
+    "section": "What?",
+    "text": "What?\n#| echo: false\n#| output: asis\n<lg type=\"sestet\" rhyme=\"ababab\">\n  <l>I saw my soul at rest upon a <rhyme label=\"a\" xml:id=\"A\">day</rhyme></l>\n  <l>As a bird sleeping in the nest of <rhyme label=\"b\" xml:id=\"B\">night</rhyme>,</l>\n</lg>\n\n\n\nhttps://warwickcdi.github.io/TEI-Workshop-2hr/materials/slides/introduction.html"
   }
 ]
