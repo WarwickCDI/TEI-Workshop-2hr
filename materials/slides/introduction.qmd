@@ -23,9 +23,9 @@ editor: source
 
 # Why
 
-## Text Encoding
+## Digital Editions
 
-* What is text encoding?
+* What are Digital Editions?
 
 . . .
 
@@ -43,9 +43,8 @@ And far more.
   
 ## But, why?
 
-Academic resources are often encoded into a digital text form.
-
-For example,
+There are times when academic resources are encoded in a digital textual 
+form. For instance,
 
 * Historical literature
 * Speeches
@@ -53,32 +52,41 @@ For example,
 
 . . .
 
-allowing easy searching, distribution, archiving, computational analysis and
-the inclusion of additional information.
+What does this offer?
+
+* searchable
+* long term archiving
+* computational analysis
+* including additional information
 
 ## The challenge
 
-* Finding a text format and rules
-* Deciding what to include
-* Using software to help you out
+* finding a text format and rules
+* deciding what to include
+* using helpful software
 
 # Text Encoding Initiative
 
-## Community help
+## Community
 
-* Our format is XML
 * The TEI consortium provide rules (or, rather, [guidelines](https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html))
 * There is an active community (e.g., recent TEI 2022 conference, [@TEI2022](https://twitter.com/TEI2022))
+* Uses a plain text XML file
 
 ## What?
 
+From Moby Dick (see details [here](https://teibyexample.org/examples/TBED05v00.htm#melville))
 
-
-```{xml}
-#| echo: false
-#| output: asis
-<lg type="sestet" rhyme="ababab">
-  <l>I saw my soul at rest upon a <rhyme label="a" xml:id="A">day</rhyme></l>
-  <l>As a bird sleeping in the nest of <rhyme label="b" xml:id="B">night</rhyme>,</l>
-</lg>
+```{xml, code-line-numbers="1,2,3-4,5-11,6,7,8-10"}
+<div xmlns="http://www.tei-c.org/ns/1.0" type="chapter">
+<pb n="214"/>
+<head>CHAPTER XL</head>
+<head>Midnight, Forecastle</head>
+<sp>
+<speaker>Harpooneers and sailors</speaker>
+<stage>(Foresail rises and discovers the watch standing, lounging, leaning, and lying in various attitudes, all singing in chorus.)</stage>
+<l>Farewell and adieu to you, Spanish ladies!</l>
+<l>Farewell and adieu to you, ladies of Spain!</l>
+<l>Our captain's commanded.--</l>
+</sp>
 ```
