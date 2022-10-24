@@ -61,5 +61,12 @@
     "title": "Introduction to TEI",
     "section": "What?",
     "text": "What?\nFrom Moby Dick (see details here)\n{xml, code-line-numbers=\"1,2,3-4,5-11,6,7,8-10\"} <div xmlns=\"http://www.tei-c.org/ns/1.0\" type=\"chapter\"> <pb n=\"214\"/> <head>CHAPTER XL</head> <head>Midnight, Forecastle</head> <sp> <speaker>Harpooneers and sailors</speaker> <stage>(Foresail rises and discovers the watch standing, lounging, leaning, and lying in various attitudes, all singing in chorus.)</stage> <l>Farewell and adieu to you, Spanish ladies!</l> <l>Farewell and adieu to you, ladies of Spain!</l> <l>Our captain's commanded.--</l> </sp>\n\n\n\nhttps://warwickcdi.github.io/TEI-Workshop-2hr/materials/slides/introduction.html"
+  },
+  {
+    "objectID": "materials/activity/01-activity1/activity1.html",
+    "href": "materials/activity/01-activity1/activity1.html",
+    "title": "Your first TEI file",
+    "section": "",
+    "text": "Here will be details on an activity to create a TEI file using the helpful Oxygen XML UI."
   }
 ]
