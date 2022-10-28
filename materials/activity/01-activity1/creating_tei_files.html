@@ -63,10 +63,10 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../../../styles.css">
 <meta property="og:title" content="Workshop Name - Creating a TEI file">
-<meta property="og:description" content="Here will be details on an activity to create a TEI file using the helpful Oxygen XML UI.">
+<meta property="og:description" content="The instructions below are for opening and creating a TEI document using Oxygen XML.">
 <meta property="og:site-name" content="Workshop Name">
 <meta name="twitter:title" content="Workshop Name - Creating a TEI file">
-<meta name="twitter:description" content="Here will be details on an activity to create a TEI file using the helpful Oxygen XML UI.">
+<meta name="twitter:description" content="The instructions below are for opening and creating a TEI document using Oxygen XML.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -124,7 +124,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#oxygen-xml" id="toc-oxygen-xml" class="nav-link active" data-scroll-target="#oxygen-xml">Oxygen XML</a>
+  <ul class="collapse">
+  <li><a href="#interface" id="toc-interface" class="nav-link" data-scroll-target="#interface">Interface</a></li>
+  <li><a href="#loading-a-file" id="toc-loading-a-file" class="nav-link" data-scroll-target="#loading-a-file">Loading a file</a></li>
+  </ul></li>
+  <li><a href="#first-tei-document" id="toc-first-tei-document" class="nav-link" data-scroll-target="#first-tei-document">First TEI document</a>
+  <ul class="collapse">
+  <li><a href="#source-document" id="toc-source-document" class="nav-link" data-scroll-target="#source-document">Source document</a></li>
+  <li><a href="#guidelines" id="toc-guidelines" class="nav-link" data-scroll-target="#guidelines">Guidelines</a></li>
+  <li><a href="#header" id="toc-header" class="nav-link" data-scroll-target="#header">Header</a></li>
+  <li><a href="#body" id="toc-body" class="nav-link" data-scroll-target="#body">Body</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -151,9 +168,74 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Here will be details on an activity to create a TEI file using the helpful Oxygen XML UI.</p>
+<section id="oxygen-xml" class="level1">
+<h1>Oxygen XML</h1>
+<p>The instructions below are for opening and creating a TEI document using Oxygen XML.</p>
+<ol type="1">
+<li>Open the Oxygen XML program. If you are in room R0.39 then open the start menu type in oxygen. You should see the application.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../materials/images/fig1-findingOxygen.png" class="img-fluid figure-img" alt="Windows start menu showing Oxygen XML Editor" width="434"></p>
+</figure>
+</div>
+<ol start="2" type="1">
+<li>Once open, select New Document. When you are faced with the document type select TEI P5 All and then click create.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../materials/images/fig2-doctype.png" class="img-fluid figure-img" alt="New document interface with TEI P5 All selected"></p>
+</figure>
+</div>
+<p>Oxygen will load in a template document ready for you to use the TEI guidelines.</p>
+<pre class="{xml}"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?&gt;
+&lt;?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?&gt;
+&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"&gt;
+  &lt;teiHeader&gt;
+      &lt;fileDesc&gt;
+         &lt;titleStmt&gt;
+            &lt;title&gt;Title&lt;/title&gt;
+         &lt;/titleStmt&gt;
+         &lt;publicationStmt&gt;
+            &lt;p&gt;Publication Information&lt;/p&gt;
+         &lt;/publicationStmt&gt;
+         &lt;sourceDesc&gt;
+            &lt;p&gt;Information about the source&lt;/p&gt;
+         &lt;/sourceDesc&gt;
+      &lt;/fileDesc&gt;
+  &lt;/teiHeader&gt;
+  &lt;text&gt;
+      &lt;body&gt;
+         &lt;p&gt;Some text here.&lt;/p&gt;
+      &lt;/body&gt;
+  &lt;/text&gt;
+&lt;/TEI&gt;</code></pre>
+<section id="interface" class="level2">
+<h2 class="anchored" data-anchor-id="interface">Interface</h2>
+</section>
+<section id="loading-a-file" class="level2">
+<h2 class="anchored" data-anchor-id="loading-a-file">Loading a file</h2>
+</section>
+</section>
+<section id="first-tei-document" class="level1">
+<h1>First TEI document</h1>
+<section id="source-document" class="level2">
+<h2 class="anchored" data-anchor-id="source-document">Source document</h2>
+</section>
+<section id="guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="guidelines">Guidelines</h2>
+</section>
+<section id="header" class="level2">
+<h2 class="anchored" data-anchor-id="header">Header</h2>
+</section>
+<section id="body" class="level2">
+<h2 class="anchored" data-anchor-id="body">Body</h2>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

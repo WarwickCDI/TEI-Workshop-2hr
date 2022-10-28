@@ -11,7 +11,7 @@
     "href": "index.html#overview",
     "title": "Outline",
     "section": "Overview",
-    "text": "Overview\nHow do you encode a text in digital form? Historical texts are rich with information. Simple text is not enough. Some text may be highlighted or crossed out. There may be locations or people referred to. Indeed, the encoder may choose to add annotations or other interpretive elements. The Text Encoding Initiative guidelines suggest how we can encode that data in an XML format. Using XML produces rich digital formats which can turned into digital editions and be explored using program languages such as R and Python.\nIn this workshop you will:\n\nGet hands on experience using the Oxygen XML editor to encode a TEI document;\nExplore the different encoding options available\nConsider the impact of the guidelines on text encoding and your own decisions on what to encode\n\n\nSchedule\n\n\n\n\n\nActivity\nTime (mins)\n\n\n\n\nIntroduction\n10\n\n\nCreating TEI Files\n30\n\n\nActivity 2\n15\n\n\nRoundup and session close\n5"
+    "text": "Overview\nHow do you encode a text in digital form? Historical texts are rich with information. Simple text is not enough. Some text may be highlighted or crossed out. There may be locations or people referred to. Indeed, the encoder may choose to add annotations or other interpretive elements. The Text Encoding Initiative guidelines suggest how we can encode that data in an XML format. Using XML produces rich digital formats which can turned into digital editions and be explored using program languages such as R and Python.\nIn this workshop you will:\n\nGet hands on experience using the Oxygen XML editor to encode a TEI document\nExplore the different encoding options available\nConsider the impact of the guidelines on text encoding and your own decisions on what to encode\n\n\nSchedule\n\n\n\n\n\nActivity\nTime (mins)\n\n\n\n\nIntroduction\n10\n\n\nCreating TEI Files\n30\n\n\nActivity 2\n15\n\n\nRoundup and session close\n5"
   },
   {
     "objectID": "index.html#learning-objectives",
@@ -67,6 +67,34 @@
     "href": "materials/activity/01-activity1/creating_tei_files.html",
     "title": "Creating a TEI file",
     "section": "",
-    "text": "Here will be details on an activity to create a TEI file using the helpful Oxygen XML UI."
+    "text": "The instructions below are for opening and creating a TEI document using Oxygen XML.\n\nOpen the Oxygen XML program. If you are in room R0.39 then open the start menu type in oxygen. You should see the application.\n\n\n\n\n\n\n\nOnce open, select New Document. When you are faced with the document type select TEI P5 All and then click create.\n\n\n\n\n\n\nOxygen will load in a template document ready for you to use the TEI guidelines.\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?xml-model href=\"http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng\" type=\"application/xml\" schematypens=\"http://relaxng.org/ns/structure/1.0\"?>\n<?xml-model href=\"http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng\" type=\"application/xml\"\n    schematypens=\"http://purl.oclc.org/dsdl/schematron\"?>\n<TEI xmlns=\"http://www.tei-c.org/ns/1.0\">\n  <teiHeader>\n      <fileDesc>\n         <titleStmt>\n            <title>Title</title>\n         </titleStmt>\n         <publicationStmt>\n            <p>Publication Information</p>\n         </publicationStmt>\n         <sourceDesc>\n            <p>Information about the source</p>\n         </sourceDesc>\n      </fileDesc>\n  </teiHeader>\n  <text>\n      <body>\n         <p>Some text here.</p>\n      </body>\n  </text>\n</TEI>"
+  },
+  {
+    "objectID": "materials/activity/01-activity1/creating_tei_files.html#source-document",
+    "href": "materials/activity/01-activity1/creating_tei_files.html#source-document",
+    "title": "Creating a TEI file",
+    "section": "Source document",
+    "text": "Source document"
+  },
+  {
+    "objectID": "materials/activity/01-activity1/creating_tei_files.html#guidelines",
+    "href": "materials/activity/01-activity1/creating_tei_files.html#guidelines",
+    "title": "Creating a TEI file",
+    "section": "Guidelines",
+    "text": "Guidelines"
+  },
+  {
+    "objectID": "materials/activity/01-activity1/creating_tei_files.html#header",
+    "href": "materials/activity/01-activity1/creating_tei_files.html#header",
+    "title": "Creating a TEI file",
+    "section": "Header",
+    "text": "Header"
+  },
+  {
+    "objectID": "materials/activity/01-activity1/creating_tei_files.html#body",
+    "href": "materials/activity/01-activity1/creating_tei_files.html#body",
+    "title": "Creating a TEI file",
+    "section": "Body",
+    "text": "Body"
   }
 ]
