@@ -11,7 +11,7 @@
     "href": "index.html#overview",
     "title": "Outline",
     "section": "Overview",
-    "text": "Overview\nIn this workshop\nConsideration of how we encode your interpretation of materials.\nTurning text into digital editions.\nhttp://dh.obdurodon.org/what-is-xml.xhtml\n\nSchedule\n\n\n\n\n\nActivity\nTime\n\n\n\n\nActivity 1\n30 mins\n\n\nActivity 2\n10 mins"
+    "text": "Overview\nHow do you encode a text in digital form? Historical texts are rich with information. Simple text is not enough. Some text may be highlighted or crossed out. There may be locations or people referred to. Indeed, the encoder may choose to add annotations or other interpretive elements. The Text Encoding Initiative guidelines suggest how we can encode that data in an XML format. Using XML produces rich digital formats which can turned into digital editions and be explored using program languages such as R and Python.\nIn this workshop you will:\n\nGet hands on experience using the Oxygen XML editor to encode a TEI document;\nExplore the different encoding options available\nConsider the impact of the guidelines on text encoding and your own decisions on what to encode\n\n\nSchedule\n\n\n\n\n\nActivity\nTime (mins)\n\n\n\n\nSides\n10\n\n\nActivity 1\n30\n\n\nActivity 2\n15\n\n\nRoundup and session close\n5"
   },
   {
     "objectID": "index.html#learning-objectives",
