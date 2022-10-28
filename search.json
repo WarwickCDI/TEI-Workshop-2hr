@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Outline",
     "section": "",
-    "text": "Pre Work\n\n\n\n\nAction 1\nAction 2\n📅25th June\n⏰10:00 - 10:30\n🏠Location"
+    "text": "Pre Work\n\n\n\nOur work will require an editor which can work with TEI XML documents.\nIf you are in R0.39 on Warwick campus then Oxygen XML is already installed.\nAlternatively:\n\nGet access to the Oxygen XML editor in some other way. Some academic institutions have an institutional license. Alternatively, the editor can be purchased for a high price (see price list).\nVisual Studio code (VSCode) is a technical text editor with TEI support. You can download VSCode for free and, after installation, install the tei-publisher-vscode and Red Hat XML extension. The interface is a bit more intimidating and some more advanced TEI features may not be supported. It should be find for the introductory content in this workshop.\n📅 TBC\n⏰TBC\n🏠Location"
   },
   {
     "objectID": "index.html#overview",
