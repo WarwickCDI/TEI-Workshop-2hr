@@ -1,7 +1,0 @@
----
-title: "Your first TEI file"
-author: "James Tripp"
-format: html
----
-
-Here will be details on an activity to create a TEI file using the helpful Oxygen XML UI.

@@ -77,7 +77,7 @@ What does this offer?
 
 From Moby Dick (see details [here](https://teibyexample.org/examples/TBED05v00.htm#melville))
 
-```{xml, code-line-numbers="1,2,3-4,5-11,6,7,8-10"}
+```{xml}
 <div xmlns="http://www.tei-c.org/ns/1.0" type="chapter">
 <pb n="214"/>
 <head>CHAPTER XL</head>

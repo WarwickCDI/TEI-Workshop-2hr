@@ -49,12 +49,12 @@ In this workshop you will:
 
 <!-- Generate via https://www.tablesgenerator.com/markdown_tables -->
 
-| Activity                                                    | Time (mins) |
+| Activity                                                                     | Time (mins) |
 |---------------------------------------------------------|:-------------:|
-| Sides                                                       |     10      |
-| [Activity 1](materials/activity/01-activity1/activity1.qmd) |     30      |
-| Activity 2                                                  |     15      |
-| Roundup and session close                                   |      5      |
+| Introduction                                                                 |     10      |
+| [Creating TEI Files](materials/activity/01-activity1/creating_tei_files.qmd) |     30      |
+| Activity 2                                                                   |     15      |
+| Roundup and session close                                                    |      5      |
 
 ## Learning objectives
 
