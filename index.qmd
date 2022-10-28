@@ -1,6 +1,6 @@
 ---
 title: "Outline"
-author: "Workshop Author"
+author: "James Tripp"
 format: html
 ---
 
@@ -35,22 +35,26 @@ Alternatively:
 
 ## Overview
 
-In this workshop
+How do you encode a text in digital form? Historical texts are rich with information. Simple text is not enough. Some text may be highlighted or crossed out. There may be locations or people referred to. Indeed, the encoder may choose to add annotations or other interpretive elements. The Text Encoding Initiative guidelines suggest how we can encode that data in an XML format. Using XML produces rich digital formats which can turned into digital editions and be explored using program languages such as R and Python.
 
-Consideration of how we encode your interpretation of materials.
+In this workshop you will:
 
-Turning text into digital editions.
+-   Get hands on experience using the Oxygen XML editor to encode a TEI document;
 
-http://dh.obdurodon.org/what-is-xml.xhtml
+-   Explore the different encoding options available
+
+-   Consider the impact of the guidelines on text encoding and your own decisions on what to encode
 
 ### Schedule
 
 <!-- Generate via https://www.tablesgenerator.com/markdown_tables -->
 
-| Activity                                                    | Time    |
-|-------------------------------------------------------------|---------|
-| [Activity 1](materials/activity/01-activity1/activity1.qmd) | 30 mins |
-| Activity 2                                                  | 10 mins |
+| Activity                                                    | Time (mins) |
+|---------------------------------------------------------|:-------------:|
+| Sides                                                       |     10      |
+| [Activity 1](materials/activity/01-activity1/activity1.qmd) |     30      |
+| Activity 2                                                  |     15      |
+| Roundup and session close                                   |      5      |
 
 ## Learning objectives
 
