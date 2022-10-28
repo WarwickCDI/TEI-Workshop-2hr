@@ -11,7 +11,7 @@
     "href": "index.html#overview",
     "title": "Outline",
     "section": "Overview",
-    "text": "Overview\nHow do you encode a text in digital form? Historical texts are rich with information. Simple text is not enough. Some text may be highlighted or crossed out. There may be locations or people referred to. Indeed, the encoder may choose to add annotations or other interpretive elements. The Text Encoding Initiative guidelines suggest how we can encode that data in an XML format. Using XML produces rich digital formats which can turned into digital editions and be explored using program languages such as R and Python.\nIn this workshop you will:\n\nGet hands on experience using the Oxygen XML editor to encode a TEI document;\nExplore the different encoding options available\nConsider the impact of the guidelines on text encoding and your own decisions on what to encode\n\n\nSchedule\n\n\n\n\n\nActivity\nTime (mins)\n\n\n\n\nSides\n10\n\n\nActivity 1\n30\n\n\nActivity 2\n15\n\n\nRoundup and session close\n5"
+    "text": "Overview\nHow do you encode a text in digital form? Historical texts are rich with information. Simple text is not enough. Some text may be highlighted or crossed out. There may be locations or people referred to. Indeed, the encoder may choose to add annotations or other interpretive elements. The Text Encoding Initiative guidelines suggest how we can encode that data in an XML format. Using XML produces rich digital formats which can turned into digital editions and be explored using program languages such as R and Python.\nIn this workshop you will:\n\nGet hands on experience using the Oxygen XML editor to encode a TEI document;\nExplore the different encoding options available\nConsider the impact of the guidelines on text encoding and your own decisions on what to encode\n\n\nSchedule\n\n\n\n\n\nActivity\nTime (mins)\n\n\n\n\nIntroduction\n10\n\n\nCreating TEI Files\n30\n\n\nActivity 2\n15\n\n\nRoundup and session close\n5"
   },
   {
     "objectID": "index.html#learning-objectives",
@@ -60,12 +60,12 @@
     "href": "materials/slides/introduction.html#what",
     "title": "Introduction to TEI",
     "section": "What?",
-    "text": "What?\nFrom Moby Dick (see details here)\n{xml, code-line-numbers=\"1,2,3-4,5-11,6,7,8-10\"} <div xmlns=\"http://www.tei-c.org/ns/1.0\" type=\"chapter\"> <pb n=\"214\"/> <head>CHAPTER XL</head> <head>Midnight, Forecastle</head> <sp> <speaker>Harpooneers and sailors</speaker> <stage>(Foresail rises and discovers the watch standing, lounging, leaning, and lying in various attitudes, all singing in chorus.)</stage> <l>Farewell and adieu to you, Spanish ladies!</l> <l>Farewell and adieu to you, ladies of Spain!</l> <l>Our captain's commanded.--</l> </sp>\n\n\n\nhttps://warwickcdi.github.io/TEI-Workshop-2hr/materials/slides/introduction.html"
+    "text": "What?\nFrom Moby Dick (see details here)\n<div xmlns=\"http://www.tei-c.org/ns/1.0\" type=\"chapter\">\n<pb n=\"214\"/>\n<head>CHAPTER XL</head>\n<head>Midnight, Forecastle</head>\n<sp>\n<speaker>Harpooneers and sailors</speaker>\n<stage>(Foresail rises and discovers the watch standing, lounging, leaning, and lying in various attitudes, all singing in chorus.)</stage>\n<l>Farewell and adieu to you, Spanish ladies!</l>\n<l>Farewell and adieu to you, ladies of Spain!</l>\n<l>Our captain's commanded.--</l>\n</sp>\n\n\n\nhttps://warwickcdi.github.io/TEI-Workshop-2hr/materials/slides/introduction.html"
   },
   {
-    "objectID": "materials/activity/01-activity1/activity1.html",
-    "href": "materials/activity/01-activity1/activity1.html",
-    "title": "Your first TEI file",
+    "objectID": "materials/activity/01-activity1/creating_tei_files.html",
+    "href": "materials/activity/01-activity1/creating_tei_files.html",
+    "title": "Creating a TEI file",
     "section": "",
     "text": "Here will be details on an activity to create a TEI file using the helpful Oxygen XML UI."
   }
