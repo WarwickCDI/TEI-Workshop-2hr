@@ -39,7 +39,7 @@ How do you encode a text in digital form? Historical texts are rich with informa
 
 In this workshop you will:
 
--   Get hands on experience using the Oxygen XML editor to encode a TEI document;
+-   Get hands on experience using the Oxygen XML editor to encode a TEI document
 
 -   Explore the different encoding options available
 
