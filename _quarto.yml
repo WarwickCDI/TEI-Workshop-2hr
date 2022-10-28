@@ -19,7 +19,7 @@ website:
           text: "Creating TEI files"
 format:
   html:
-    theme: materia
+    theme: litera
     css: styles.css
     toc: true
 
