@@ -9,8 +9,14 @@ format: html
 ::: callout-tip
 ## Pre Work
 
--   Action 1
--   Action 2
+Our work will require an editor which can work with TEI XML documents.
+
+**If you are in R0.39 on Warwick campus then Oxygen XML is already installed.**
+
+Alternatively:
+
+1.  Get access to the Oxygen XML editor in some other way. Some academic institutions have an institutional license. Alternatively, the editor can be purchased for a high price (see [price list](https://www.oxygenxml.com/buy-academic.html)).
+2.  Visual Studio code (VSCode) is a technical text editor with TEI support. You can [download VSCode for free](https://code.visualstudio.com/Download) and, after installation, install the [tei-publisher-vscode](https://marketplace.visualstudio.com/items?itemName=e-editiones.tei-publisher-vscode) and [Red Hat XML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml) extension. The interface is a bit more intimidating and some more advanced TEI features may not be supported. It should be find for the introductory content in this workshop.
 :::
 
 ------------------------------------------------------------------------
@@ -19,9 +25,9 @@ format: html
 
 <!-- See https://quarto.org/docs/visual-editor/content.html -->
 
-📅25th June
+📅 TBC
 
-⏰10:00 - 10:30
+⏰TBC
 
 🏠Location
 
@@ -36,8 +42,6 @@ Consideration of how we encode your interpretation of materials.
 Turning text into digital editions.
 
 http://dh.obdurodon.org/what-is-xml.xhtml
-
-
 
 ### Schedule
 
@@ -57,22 +61,15 @@ http://dh.obdurodon.org/what-is-xml.xhtml
 ## Instructor
 
 ::: columns
-
-::: {.column width="70%"}
-
+::: {.column width="50%"}
 James Tripp is a Senior Research Software Engineer at the University of Warwick. He has been working at the intersection of research and technology for over 10 years.
 
-Twitter: [@jamestripp_](https://twitter.com/jamestripp_)
-Email: [james.tripp\@warwick.ac.uk](mailto:james.tripp@warwick.ac.uk)
-
+Twitter: [\@jamestripp\_](https://twitter.com/jamestripp_) Email: [james.tripp\@warwick.ac.uk](mailto:james.tripp@warwick.ac.uk)
 :::
 
-::: {.column width="70%"}
-
+::: {.column width="50%"}
 ![](materials/images/james.jfif){fig-alt="James Tripp" fig-align="center" width="250"}
-
 :::
-
 :::
 
 ------------------------------------------------------------------------
