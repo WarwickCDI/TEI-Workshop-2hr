@@ -4,4 +4,57 @@ author: "James Tripp"
 format: html
 ---
 
-Here will be details on an activity to create a TEI file using the helpful Oxygen XML UI.
+# Oxygen XML
+
+The instructions below are for opening and creating a TEI document using Oxygen XML.
+
+1.  Open the Oxygen XML program. If you are in room R0.39 then open the start menu type in oxygen. You should see the application.
+
+![](/materials/images/fig1-findingOxygen.png){fig-alt="Windows start menu showing Oxygen XML Editor" fig-align="center" width="434"}
+
+2.  Once open, select New Document. When you are faced with the document type select TEI P5 All and then click create.
+
+![](/materials/images/fig2-doctype.png){fig-alt="New document interface with TEI P5 All selected" fig-align="center"}
+
+Oxygen will load in a template document ready for you to use the TEI guidelines.
+
+```{xml}
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+  </text>
+</TEI>
+```
+
+## Interface
+
+## Loading a file
+
+# First TEI document
+
+## Source document
+
+## Guidelines
+
+## Header
+
+## Body
