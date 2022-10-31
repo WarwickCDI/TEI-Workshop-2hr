@@ -50,13 +50,13 @@ The XML files is a series of tags such as \<text\>.
 
 This line tells us we are using XML version 1 and the file encoding. This line is needed but it beyond the scope of our session to delve into all the details.
 
-```{xml}
+``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 ```
 
 Next we specify the rules we want to follow.
 
-```{xml}
+``` xml
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 ```
@@ -65,7 +65,7 @@ We are specifying the particular xml models we want to use. An XML model has a t
 
 Wait, what? That may sound confusing but let us look at the teiHeader section of our file.
 
-```{xml}
+``` xml
 <teiHeader>
     <fileDesc>
        <titleStmt>
@@ -83,35 +83,18 @@ Wait, what? That may sound confusing but let us look at the teiHeader section of
 
 As a tree, this section look like this.
 
-```{mermaid}
-flowchart TD
-    teiHeader --> fileDesc
-    fileDesc --> titleStml
-    fileDesc --> publicationStmt
-    fileDesc --> sourceDesc
-    titleStml --> title
-    publicationStmt --> p
-    sourceDesc --> p
-```
+![](/materials/images/tei_header.png){fig-alt="Tree representation of node stucture" fig-align="center"}
 
-Within the XML model, a [teiHeader](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD11) can contain several other nodes including fileDesc. In [fileDesc](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html), the [titleStml](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html), [publicationStmt](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html) and [sourceDesc](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html) are allowed. These links will take you to the TEI documentation which is available online.
+Within the XML model, a [teiHeader](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD11) can contain several other nodes including fileDesc. In [fileDesc](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html), the [titleStml](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html), [publicationStmt](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html) and [sourceDesc](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html) are allowed. These links will take you to the TEI documentation which is available online. The remainder of the file contains the [text](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-text.html) node, within which is the [body](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-body.html) and in that is a [paragraph](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html).
 
-The remainder of the file contains the [text](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-text.html) node, within which is the [body](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-body.html) and in that is a [paragraph](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html).
+The ruleset may seem restrictive, but it provides a standardised way to encode our text. We can also use the guidelines as prompts to consider what we might want to encode.
 
-We have a set of rules governing how to structure our encoding of text.
+# Encoding
 
-# Our text
+We are going to work on encoding a page from [George Orwell's political diary 1940-41](https://www.bl.uk/collection-items/orwells-political-diary-1940-41). Several photographs of the diary are available to view on the British Library website. Note the usage terms from the website. We will stick strictly to these terms and only use the image for educational purposes.
 
-## Interface
+    George Orwell: © With kind permission of the estate of the late Sonia Brownell Orwell. You may not use the material for commercial purposes. Please credit the copyright holder when reusing this work.
 
-## Loading a file
+    UCL: © Orwell Archive, UCL Library Special Collections.
 
-# First TEI document
-
-## Source document
-
-## Guidelines
-
-## Header
-
-## Body
+Our goal at the end of this first activity is to have a TEI document with the file description and the basic formatting of the page.
