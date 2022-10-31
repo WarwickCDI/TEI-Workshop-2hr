@@ -195,7 +195,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul class="collapse">
   <li><a href="#xml-and-tei" id="toc-xml-and-tei" class="nav-link" data-scroll-target="#xml-and-tei">XML and TEI</a></li>
   </ul></li>
-  <li><a href="#encoding" id="toc-encoding" class="nav-link" data-scroll-target="#encoding">Encoding</a></li>
+  <li><a href="#encoding" id="toc-encoding" class="nav-link" data-scroll-target="#encoding">Encoding</a>
+  <ul class="collapse">
+  <li><a href="#document-description" id="toc-document-description" class="nav-link" data-scroll-target="#document-description">Document description</a></li>
+  <li><a href="#helpful-oxygen-xml" id="toc-helpful-oxygen-xml" class="nav-link" data-scroll-target="#helpful-oxygen-xml">Helpful Oxygen XML</a></li>
+  <li><a href="#encoding-text-structure" id="toc-encoding-text-structure" class="nav-link" data-scroll-target="#encoding-text-structure">Encoding text structure</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -302,13 +307,52 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="encoding" class="level1">
 <h1>Encoding</h1>
-<p>We are going to work on encoding a page from <a href="https://www.bl.uk/collection-items/orwells-political-diary-1940-41">George Orwell’s political diary 1940-41</a>. Several photographs of the diary are available to view on the British Library website. Note the usage terms from the website. We will stick strictly to these terms and only use the image for educational purposes.</p>
-<pre><code>George Orwell: © With kind permission of the estate of the late Sonia Brownell Orwell. You may not use the material for commercial purposes. Please credit the copyright holder when reusing this work.
+<p>We are going to work on encoding a page from <a href="https://www.bl.uk/collection-items/orwells-political-diary-1940-41">George Orwell’s political diary 1940-41</a>. Several photographs of the diary are available to view on the British Library website. Note the usage terms from the website.</p>
+<p><em>George Orwell: © With kind permission of the estate of the late Sonia Brownell Orwell. You may not use the material for commercial purposes. Please credit the copyright holder when reusing this work.</em></p>
+<p><em>UCL: © Orwell Archive, UCL Library Special Collections.</em></p>
+<p>We will stick strictly to these terms and only use the image for educational purposes.</p>
+<section id="document-description" class="level2">
+<h2 class="anchored" data-anchor-id="document-description">Document description</h2>
+<ol type="1">
+<li><u>Open up Oxygen XML and start a new document using all the TEI P5 guidelines.</u></li>
+<li><u>Fill out details about the document title, publication information and information about the source.</u></li>
+</ol>
+<p><em>Note</em>: How do you choose what information to include? What’s important?</p>
+</section>
+<section id="helpful-oxygen-xml" class="level2">
+<h2 class="anchored" data-anchor-id="helpful-oxygen-xml">Helpful Oxygen XML</h2>
+<p>The Oxygen XML interface is designed to help you.</p>
+<ul>
+<li><p>In the bottom left is a tree, much like the screenshot above. If you click on the a node name, such as fileDesc, all of the child nodes are selected (see below image).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../materials/images/OxygenXMLEditor.png" class="img-fluid figure-img" alt="Oxygen XML editor with the fileDesc node and child nodes highlighted"></p>
+</figure>
+</div></li>
+<li><p>In the top right are two tabs: attributes and model. The model tab shows the rules for the selected node. If we select the fileDesc node then we see a description of the node from the TEI guidelines, the possible child nodes (titleStmt, publicationStmt) and the possible attributes. An attribute is information attached to the node.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../materials/images/OxygenXMLModel.png" class="img-fluid figure-img" alt="The model tab for the fileDesc node displayed in the Oxygen XML editor"></p>
+</figure>
+</div>
+<ul>
+<li><p>The attributes tab allows you to easily change an attribute of a node. More on that in the second activity.</p></li>
+<li><p>In the Text tab (where the file text is shown) you can create a new node by opening a &lt; bracket. Oxygen XML will then show you a list of the available nodes (keeping within the TEI rules). For instance, you can create a location node as a child node of p (paragraph).</p></li>
+</ul>
+</section>
+<section id="encoding-text-structure" class="level2">
+<h2 class="anchored" data-anchor-id="encoding-text-structure">Encoding text structure</h2>
+<ol type="1">
+<li>Write some or all of the text from a page of the Orwell diary.</li>
+<li>Add structural information. For instance, the
+<p>
+node to indicate a paragraph. If you include dates then use <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html">&lt;date when=““&gt;text&lt;/date&gt;</a></p></li>
+<li>Click on the Author tab. What does it show you? Spend a few minutes looking at going through the interface and looking at the different options.</li>
+</ol>
 
-UCL: © Orwell Archive, UCL Library Special Collections.</code></pre>
-<p>Our goal at the end of this first activity is to have a TEI document with the file description and the basic formatting of the page.</p>
 
-
+</section>
 </section>
 
 </main> <!-- /main -->
