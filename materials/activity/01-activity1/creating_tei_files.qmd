@@ -91,10 +91,39 @@ The ruleset may seem restrictive, but it provides a standardised way to encode o
 
 # Encoding
 
-We are going to work on encoding a page from [George Orwell's political diary 1940-41](https://www.bl.uk/collection-items/orwells-political-diary-1940-41). Several photographs of the diary are available to view on the British Library website. Note the usage terms from the website. We will stick strictly to these terms and only use the image for educational purposes.
+We are going to work on encoding a page from [George Orwell's political diary 1940-41](https://www.bl.uk/collection-items/orwells-political-diary-1940-41). Several photographs of the diary are available to view on the British Library website. Note the usage terms from the website.
 
-    George Orwell: © With kind permission of the estate of the late Sonia Brownell Orwell. You may not use the material for commercial purposes. Please credit the copyright holder when reusing this work.
+*George Orwell: © With kind permission of the estate of the late Sonia Brownell Orwell. You may not use the material for commercial purposes. Please credit the copyright holder when reusing this work.*
 
-    UCL: © Orwell Archive, UCL Library Special Collections.
+*UCL: © Orwell Archive, UCL Library Special Collections.*
 
-Our goal at the end of this first activity is to have a TEI document with the file description and the basic formatting of the page.
+We will stick strictly to these terms and only use the image for educational purposes.
+
+## Document description
+
+1.  [Open up Oxygen XML and start a new document using all the TEI P5 guidelines.]{.underline}
+2.  [Fill out details about the document title, publication information and information about the source.]{.underline}
+
+*Note*: How do you choose what information to include? What's important?
+
+## Helpful Oxygen XML
+
+The Oxygen XML interface is designed to help you.
+
+-   In the bottom left is a tree, much like the screenshot above. If you click on the a node name, such as fileDesc, all of the child nodes are selected (see below image).
+
+    ![](/materials/images/OxygenXMLEditor.png){fig-alt="Oxygen XML editor with the fileDesc node and child nodes highlighted" fig-align="center"}
+
+-   In the top right are two tabs: attributes and model. The model tab shows the rules for the selected node. If we select the fileDesc node then we see a description of the node from the TEI guidelines, the possible child nodes (titleStmt, publicationStmt) and the possible attributes. An attribute is information attached to the node.
+
+![](/materials/images/OxygenXMLModel.png){fig-alt="The model tab for the fileDesc node displayed in the Oxygen XML editor" fig-align="center"}
+
+-   The attributes tab allows you to easily change an attribute of a node. More on that in the second activity.
+
+-   In the Text tab (where the file text is shown) you can create a new node by opening a \< bracket. Oxygen XML will then show you a list of the available nodes (keeping within the TEI rules). For instance, you can create a location node as a child node of p (paragraph).
+
+## Encoding text structure
+
+1.  Write some or all of the text from a page of the Orwell diary.
+2.  Add structural information. For instance, the <p> node to indicate a paragraph. If you include dates then use [\<date when=""\>text\</date\>](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html)
+3.  Click on the Author tab. What does it show you? Spend a few minutes looking at going through the interface and looking at the different options.
