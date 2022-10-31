@@ -122,9 +122,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script src="../../../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../../styles.css">
@@ -198,18 +195,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul class="collapse">
   <li><a href="#xml-and-tei" id="toc-xml-and-tei" class="nav-link" data-scroll-target="#xml-and-tei">XML and TEI</a></li>
   </ul></li>
-  <li><a href="#our-text" id="toc-our-text" class="nav-link" data-scroll-target="#our-text">Our text</a>
-  <ul class="collapse">
-  <li><a href="#interface" id="toc-interface" class="nav-link" data-scroll-target="#interface">Interface</a></li>
-  <li><a href="#loading-a-file" id="toc-loading-a-file" class="nav-link" data-scroll-target="#loading-a-file">Loading a file</a></li>
-  </ul></li>
-  <li><a href="#first-tei-document" id="toc-first-tei-document" class="nav-link" data-scroll-target="#first-tei-document">First TEI document</a>
-  <ul class="collapse">
-  <li><a href="#source-document" id="toc-source-document" class="nav-link" data-scroll-target="#source-document">Source document</a></li>
-  <li><a href="#guidelines" id="toc-guidelines" class="nav-link" data-scroll-target="#guidelines">Guidelines</a></li>
-  <li><a href="#header" id="toc-header" class="nav-link" data-scroll-target="#header">Header</a></li>
-  <li><a href="#body" id="toc-body" class="nav-link" data-scroll-target="#body">Body</a></li>
-  </ul></li>
+  <li><a href="#encoding" id="toc-encoding" class="nav-link" data-scroll-target="#encoding">Encoding</a></li>
   </ul>
 </nav>
     </div>
@@ -285,76 +271,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="xml-and-tei">XML and TEI</h2>
 <p>The XML files is a series of tags such as &lt;text&gt;.</p>
 <p>This line tells us we are using XML version 1 and the file encoding. This line is needed but it beyond the scope of our session to delve into all the details.</p>
-<pre class="{xml}"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Next we specify the rules we want to follow.</p>
-<pre class="{xml}"><code>&lt;?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?&gt;
-&lt;?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?&gt;</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">&lt;?xml-model</span> href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"<span class="fu">?&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">&lt;?xml-model</span> href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"<span class="fu">?&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>We are specifying the particular xml models we want to use. An XML model has a tree structure - that is, a particular &lt;node&gt; may by within other specific &lt;nodes&gt;.</p>
 <p>Wait, what? That may sound confusing but let us look at the teiHeader section of our file.</p>
-<pre class="{xml}"><code>&lt;teiHeader&gt;
-    &lt;fileDesc&gt;
-       &lt;titleStmt&gt;
-          &lt;title&gt;Title&lt;/title&gt;
-       &lt;/titleStmt&gt;
-       &lt;publicationStmt&gt;
-          &lt;p&gt;Publication Information&lt;/p&gt;
-       &lt;/publicationStmt&gt;
-       &lt;sourceDesc&gt;
-          &lt;p&gt;Information about the source&lt;/p&gt;
-       &lt;/sourceDesc&gt;
-    &lt;/fileDesc&gt;
-&lt;/teiHeader&gt;</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">teiHeader</span>&gt;</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">fileDesc</span>&gt;</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>       &lt;<span class="kw">titleStmt</span>&gt;</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">title</span>&gt;Title&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>       &lt;/<span class="kw">titleStmt</span>&gt;</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>       &lt;<span class="kw">publicationStmt</span>&gt;</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">p</span>&gt;Publication Information&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>       &lt;/<span class="kw">publicationStmt</span>&gt;</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>       &lt;<span class="kw">sourceDesc</span>&gt;</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">p</span>&gt;Information about the source&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>       &lt;/<span class="kw">sourceDesc</span>&gt;</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">fileDesc</span>&gt;</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">teiHeader</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>As a tree, this section look like this.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<p>
-</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart TD
-    teiHeader --&gt; fileDesc
-    fileDesc --&gt; titleStml
-    fileDesc --&gt; publicationStmt
-    fileDesc --&gt; sourceDesc
-    titleStml --&gt; title
-    publicationStmt --&gt; p
-    sourceDesc --&gt; p
-</pre>
-<div id="mermaid-tooltip-1" class="mermaidTooltip">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../materials/images/tei_header.png" class="img-fluid figure-img" alt="Tree representation of node stucture"></p>
+</figure>
+</div>
+<p>Within the XML model, a <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD11">teiHeader</a> can contain several other nodes including fileDesc. In <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html">fileDesc</a>, the <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html">titleStml</a>, <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html">publicationStmt</a> and <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html">sourceDesc</a> are allowed. These links will take you to the TEI documentation which is available online. The remainder of the file contains the <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-text.html">text</a> node, within which is the <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-body.html">body</a> and in that is a <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html">paragraph</a>.</p>
+<p>The ruleset may seem restrictive, but it provides a standardised way to encode our text. We can also use the guidelines as prompts to consider what we might want to encode.</p>
+</section>
+</section>
+<section id="encoding" class="level1">
+<h1>Encoding</h1>
+<p>We are going to work on encoding a page from <a href="https://www.bl.uk/collection-items/orwells-political-diary-1940-41">George Orwell’s political diary 1940-41</a>. Several photographs of the diary are available to view on the British Library website. Note the usage terms from the website. We will stick strictly to these terms and only use the image for educational purposes.</p>
+<pre><code>George Orwell: © With kind permission of the estate of the late Sonia Brownell Orwell. You may not use the material for commercial purposes. Please credit the copyright holder when reusing this work.
 
-</div>
-<p></p>
-</div>
-</div>
-</div>
-<p>Within the XML model, a <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD11">teiHeader</a> can contain several other nodes including fileDesc. In <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html">fileDesc</a>, the <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html">titleStml</a>, <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html">publicationStmt</a> and <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html">sourceDesc</a> are allowed. These links will take you to the TEI documentation which is available online.</p>
-<p>The remainder of the file contains the <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-text.html">text</a> node, within which is the <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-body.html">body</a> and in that is a <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html">paragraph</a>.</p>
-<p>We have a set of rules governing how to structure our encoding of text.</p>
-</section>
-</section>
-<section id="our-text" class="level1">
-<h1>Our text</h1>
-<section id="interface" class="level2">
-<h2 class="anchored" data-anchor-id="interface">Interface</h2>
-</section>
-<section id="loading-a-file" class="level2">
-<h2 class="anchored" data-anchor-id="loading-a-file">Loading a file</h2>
-</section>
-</section>
-<section id="first-tei-document" class="level1">
-<h1>First TEI document</h1>
-<section id="source-document" class="level2">
-<h2 class="anchored" data-anchor-id="source-document">Source document</h2>
-</section>
-<section id="guidelines" class="level2">
-<h2 class="anchored" data-anchor-id="guidelines">Guidelines</h2>
-</section>
-<section id="header" class="level2">
-<h2 class="anchored" data-anchor-id="header">Header</h2>
-</section>
-<section id="body" class="level2">
-<h2 class="anchored" data-anchor-id="body">Body</h2>
+UCL: © Orwell Archive, UCL Library Special Collections.</code></pre>
+<p>Our goal at the end of this first activity is to have a TEI document with the file description and the basic formatting of the page.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
