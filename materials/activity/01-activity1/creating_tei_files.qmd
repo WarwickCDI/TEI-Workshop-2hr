@@ -21,8 +21,7 @@ Oxygen will load in a template document ready for you to use the TEI guidelines.
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
@@ -44,6 +43,64 @@ Oxygen will load in a template document ready for you to use the TEI guidelines.
   </text>
 </TEI>
 ```
+
+## XML and TEI
+
+The XML files is a series of tags such as \<text\>.
+
+This line tells us we are using XML version 1 and the file encoding. This line is needed but it beyond the scope of our session to delve into all the details.
+
+```{xml}
+<?xml version="1.0" encoding="UTF-8"?>
+```
+
+Next we specify the rules we want to follow.
+
+```{xml}
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+```
+
+We are specifying the particular xml models we want to use. An XML model has a tree structure - that is, a particular \<node\> may by within other specific \<nodes\>.
+
+Wait, what? That may sound confusing but let us look at the teiHeader section of our file.
+
+```{xml}
+<teiHeader>
+    <fileDesc>
+       <titleStmt>
+          <title>Title</title>
+       </titleStmt>
+       <publicationStmt>
+          <p>Publication Information</p>
+       </publicationStmt>
+       <sourceDesc>
+          <p>Information about the source</p>
+       </sourceDesc>
+    </fileDesc>
+</teiHeader>
+```
+
+As a tree, this section look like this.
+
+```{mermaid}
+flowchart TD
+    teiHeader --> fileDesc
+    fileDesc --> titleStml
+    fileDesc --> publicationStmt
+    fileDesc --> sourceDesc
+    titleStml --> title
+    publicationStmt --> p
+    sourceDesc --> p
+```
+
+Within the XML model, a [teiHeader](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD11) can contain several other nodes including fileDesc. In [fileDesc](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html), the [titleStml](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html), [publicationStmt](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html) and [sourceDesc](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html) are allowed. These links will take you to the TEI documentation which is available online.
+
+The remainder of the file contains the [text](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-text.html) node, within which is the [body](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-body.html) and in that is a [paragraph](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html).
+
+We have a set of rules governing how to structure our encoding of text.
+
+# Our text
 
 ## Interface
 
