@@ -217,15 +217,34 @@ ul.task-list li input[type="checkbox"] {
 <section id="steps" class="level2">
 <h2 class="anchored" data-anchor-id="steps">Steps</h2>
 <ol type="1">
-<li>Add the date tag to dates.</li>
-<li>Identify locations and encapsulate each location in the places tag. There relevant indicate your certainty that this is a location. You may want to add latitude and longitude co-ordinate (see help below).</li>
-<li>Indicate text which has been deleted using the del tag.</li>
-<li>Indicate inserted text with the add tag. Be sure to provide a place for the addition and how it should be rendered.</li>
+<li>Add the date element to dates in the text.</li>
+<li>Identify place names and encapsulate each place name in the placeName element. There relevant indicate your certainty that this is a location. You may want to add latitude and longitude co-ordinate (see help below).</li>
+<li>Add</li>
+<li>Indicate text which has been deleted using the del element.</li>
+<li>Indicate inserted text with the add element. Be sure to provide a place for the addition and how it should be rendered.</li>
 </ol>
 <section id="help" class="level3">
 <h3 class="anchored" data-anchor-id="help">Help</h3>
-<p>We have a few new tags to look at.</p>
-<p>Dates are marked up using the date tag. The tag has a when attribute to record the actual date. This make sense if we want to accurately record dates even when some has written ‘midweek’ or ‘term 2 - week 9’. For our purposes, we can record a date as shown below.</p>
+<p>We have a few new elements to look at.</p>
+<p><strong>Dates</strong> are marked up using the date element. The element has a when attribute to record the actual date. This make sense if we want to accurately record dates even when some has written ‘midweek’ or ‘term 2 - week 9’. For our purposes, we can record a date as shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-85A38554.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><strong>Place names</strong> indicates, to no surprise, the name of a place. The name of the place should be within the PlaceName element. You can add an attribute to indicate how certain you are that this is a placename.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-D733B6B2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>You may also want to add the spatial co-ordinates of a place. The geo element, which can be placed in the location element within placeName, lets you specify the geolocation of the place. For instance, this would look like the below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-1253576B.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>For completeness, you may want to indicate the project of the co-ordinates (discussion of this goes beyond this page). We need not worry in our case because our co-ordinate projection is <a href="http://wiki.gis.com/wiki/index.php/WGS84">WGS 84</a> and co-ordinates within geo are assumed to follow WGS, see <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDGEOGva">the documentation on the varieties of location</a>.</p>
 
 
 </section>
