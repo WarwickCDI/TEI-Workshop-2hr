@@ -4,6 +4,36 @@ author: "James Tripp"
 format: html
 ---
 
+# Aims
+
+-   Become more familiar with the TEI XML file structure
+
+-   Practice using the Oxygen XML editor
+
+-   Start creating a TEI XML file for the Orwell Political Diaries 1940-41 found [here](https://www.bl.uk/collection-items/orwells-political-diary-1940-41 "Pages from Orwell's Political Diary")
+
+# Primary source
+
+The British Library has made photos of the Orwell Political Diaries available to us. There are 4 pages including the 17th, 21st, 24th and 27th of September 1940.
+
+For those unfamiliar with George Orwell, there is [an extensive wikipedia page about him](https://en.wikipedia.org/wiki/George_Orwell "George Orwell Wikipedia Page"). In the early 1940s, he was found unfit for any kind of military service, working in the Home Guard and living in Central London. The period is after he published [Coming Up for Air](https://en.wikipedia.org/wiki/Coming_Up_for_Air "Coming Up for Air Wikipedia Page") (1939) and several years before his famous book [Animal Farm](https://en.wikipedia.org/wiki/Animal_Farm "Animal Farm Wikipedia Page") (1945).
+
+## Source rights and usage
+
+We are going to work on encoding pages from [George Orwell's political diary 1940-41](https://www.bl.uk/collection-items/orwells-political-diary-1940-41). Several photographs of the diary are available to view on the British Library website. Note the usage terms from the website.
+
+*George Orwell: © With kind permission of the estate of the late Sonia Brownell Orwell. You may not use the material for commercial purposes. Please credit the copyright holder when reusing this work.*
+
+*UCL: © Orwell Archive, UCL Library Special Collections.*
+
+We will stick strictly to these terms and only use the image for educational purposes.
+
+## Why?
+
+A digital version of Orwell's diary is available on [a WordPress page](https://orwelldiaries.wordpress.com/ "WordPress Page containing Orwell's diaries"). Like [other Orwell writings available online](https://www.orwellfoundation.com/the-orwell-foundation/orwell/diaries/) these follow a blog type format. What information is lost when comparing [images of the diary](https://www.bl.uk/collection-items/orwells-political-diary-1940-41 "Diary images provided by the British Library") with [the blog format](https://orwelldiaries.wordpress.com/2010/09/17/17-9-40/ "Blog entry of diary entry of Orwell in 17.9.40")?
+
+TEI XML provides us with a way to encode more information. We can include strike through, edits, indicates places, etc. All of this information may be useful for a richer interpretation and understanding of the diary. A better understanding of the diary helps us understand the time, the people and, I daresay, the humanity of the moment.
+
 # Oxygen XML
 
 The instructions below are for opening and creating a TEI document using Oxygen XML.
@@ -87,24 +117,7 @@ As a tree, this section look like this.
 
 Within the XML model, a [teiHeader](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html#HD11) can contain several other nodes including fileDesc. In [fileDesc](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html), the [titleStml](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html), [publicationStmt](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html) and [sourceDesc](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html) are allowed. These links will take you to the TEI documentation which is available online. The remainder of the file contains the [text](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-text.html) node, within which is the [body](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-body.html) and in that is a [paragraph](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html).
 
-The ruleset may seem restrictive, but it provides a standardised way to encode our text. We can also use the guidelines as prompts to consider what we might want to encode.
-
-# Encoding
-
-We are going to work on encoding a page from [George Orwell's political diary 1940-41](https://www.bl.uk/collection-items/orwells-political-diary-1940-41). Several photographs of the diary are available to view on the British Library website. Note the usage terms from the website.
-
-*George Orwell: © With kind permission of the estate of the late Sonia Brownell Orwell. You may not use the material for commercial purposes. Please credit the copyright holder when reusing this work.*
-
-*UCL: © Orwell Archive, UCL Library Special Collections.*
-
-We will stick strictly to these terms and only use the image for educational purposes.
-
-## Document description
-
-1.  [Open up Oxygen XML and start a new document using all the TEI P5 guidelines.]{.underline}
-2.  [Fill out details about the document title, publication information and information about the source.]{.underline}
-
-*Note*: How do you choose what information to include? What's important?
+The ruleset (guidelines) may seem restrictive, but it provides a standardised way to encode our text. We can also use the guidelines as prompts to consider what we might want to encode.
 
 ## Helpful Oxygen XML
 
@@ -122,8 +135,37 @@ The Oxygen XML interface is designed to help you.
 
 -   In the Text tab (where the file text is shown) you can create a new node by opening a \< bracket. Oxygen XML will then show you a list of the available nodes (keeping within the TEI rules). For instance, you can create a location node as a child node of p (paragraph).
 
-## Encoding text structure
+# Activity One
 
-1.  Write some or all of the text from a page of the Orwell diary.
-2.  Add structural information. For instance, the <p> node to indicate a paragraph. If you include dates then use [\<date when=""\>text\</date\>](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html)
-3.  Click on the Author tab. What does it show you? Spend a few minutes looking at going through the interface and looking at the different options.
+## Goal
+
+We want to have a version of Orwell's diary entries in an XML format. In this first activity, we will create a file containing the Political Diary text with file information in the TEI header and structural information (paragraphs and page numbers).
+
+## Steps
+
+1.  Create a TEI P5 file (see above). Add to the file the file title, author, publication authority, source description and details of the project. Save the file.
+2.  Add the paragraphs and page numbers.
+
+### Helpful files and links
+
+-   University of Warwick students can access diary page plain text [here](https://livewarwickac-my.sharepoint.com/:t:/g/personal/pssnac_live_warwick_ac_uk/EVybJzgjsI9OmYiFReoPAlQBLkO9SaYJDw1KJuvboXac8g?e=rQkCgh). You will need to put this text into a TEI XML file in Oxygen XML.
+
+-   The TEI group have [information about the TEI header](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html). There is also a [tutorial on the teibyexample.org page](https://teibyexample.org/tutorials/TBED02v00.htm) which details 'The TEI Header'.
+
+-   Each TEI element has documentation online. Guidance on interpreting the guidance is below. For this activity, you are encoding the position of paragraphs with the [p element](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html) and page beginnings with the [pb element](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html). Note: the page break for page 55 will be \<pb n="55"/\>.
+
+## Interpreting the Documentation
+
+TEI provide online documentation for each version of [the guidelines](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html). The current version of the guidelines is P5. These guidelines cover a lot of different use cases designed to help academics capture lots of different parts of a source.
+
+When you first look at the documentation it can be tricky to understand. To help you, let us consider [the page for the pb element.](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html) There is a description of the element an a link to a grouping of similar elements (here the grouping of Milestone Elements is relevant).
+
+![](images/paste-B57B779E.png)
+
+The pb element is part of the 'core elements'. James Cummings has an excellent set of slides about core components [here](https://slides.com/jamescummings/teistructure-core).
+
+```{=html}
+<iframe src="https://slides.com/jamescummings/teistructure-core/embed" width="576" height="420" title="TEI Structure and Basic Core Components" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+
+</iframe>
+```
