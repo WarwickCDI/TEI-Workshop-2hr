@@ -146,10 +146,11 @@ We want to have a version of Orwell's diary entries in an XML format. In this fi
 1.  Create a TEI P5 file (see above). Add to the file the file title, author, publication authority, source description and details of the project. Save the file.
 2.  Add the paragraphs and page numbers.
 
-### Helpful files and links
+::: callout-tip
 
 -   University of Warwick students can access diary page plain text [here](https://livewarwickac-my.sharepoint.com/:t:/g/personal/pssnac_live_warwick_ac_uk/EVybJzgjsI9OmYiFReoPAlQBLkO9SaYJDw1KJuvboXac8g?e=rQkCgh). You will need to put this text into a TEI XML file in Oxygen XML.
 
 -   The TEI group have [information about the TEI header](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html). There is also a [tutorial on the teibyexample.org page](https://teibyexample.org/tutorials/TBED02v00.htm) which details 'The TEI Header'.
 
 -   Each TEI element has documentation online. Guidance on interpreting the guidance is below. For this activity, you are encoding the position of paragraphs with the [p element](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html) and page beginnings with the [pb element](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html). Note: the page break for page 55 will be \<pb n="55"/\>.
+:::
