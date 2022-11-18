@@ -67,14 +67,28 @@
     "href": "materials/activity/01-activity1/creating_tei_files.html",
     "title": "Creating a TEI file",
     "section": "",
-    "text": "The instructions below are for opening and creating a TEI document using Oxygen XML.\n\nOpen the Oxygen XML program. If you are in room R0.39 then open the start menu type in oxygen. You should see the application.\n\n\n\n\n\n\n\nOnce open, select New Document. When you are faced with the document type select TEI P5 All and then click create.\n\n\n\n\n\n\nOxygen will load in a template document ready for you to use the TEI guidelines.\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?xml-model href=\"http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng\" type=\"application/xml\" schematypens=\"http://relaxng.org/ns/structure/1.0\"?>\n<?xml-model href=\"http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng\" type=\"application/xml\" schematypens=\"http://purl.oclc.org/dsdl/schematron\"?>\n<TEI xmlns=\"http://www.tei-c.org/ns/1.0\">\n  <teiHeader>\n      <fileDesc>\n         <titleStmt>\n            <title>Title</title>\n         </titleStmt>\n         <publicationStmt>\n            <p>Publication Information</p>\n         </publicationStmt>\n         <sourceDesc>\n            <p>Information about the source</p>\n         </sourceDesc>\n      </fileDesc>\n  </teiHeader>\n  <text>\n      <body>\n         <p>Some text here.</p>\n      </body>\n  </text>\n</TEI>\n\n\nThe XML files is a series of tags such as <text>.\nThis line tells us we are using XML version 1 and the file encoding. This line is needed but it beyond the scope of our session to delve into all the details.\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\nNext we specify the rules we want to follow.\n<?xml-model href=\"http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng\" type=\"application/xml\" schematypens=\"http://relaxng.org/ns/structure/1.0\"?>\n<?xml-model href=\"http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng\" type=\"application/xml\" schematypens=\"http://purl.oclc.org/dsdl/schematron\"?>\nWe are specifying the particular xml models we want to use. An XML model has a tree structure - that is, a particular <node> may by within other specific <nodes>.\nWait, what? That may sound confusing but let us look at the teiHeader section of our file.\n<teiHeader>\n    <fileDesc>\n       <titleStmt>\n          <title>Title</title>\n       </titleStmt>\n       <publicationStmt>\n          <p>Publication Information</p>\n       </publicationStmt>\n       <sourceDesc>\n          <p>Information about the source</p>\n       </sourceDesc>\n    </fileDesc>\n</teiHeader>\nAs a tree, this section look like this.\n\n\n\n\n\nWithin the XML model, a teiHeader can contain several other nodes including fileDesc. In fileDesc, the titleStml, publicationStmt and sourceDesc are allowed. These links will take you to the TEI documentation which is available online. The remainder of the file contains the text node, within which is the body and in that is a paragraph.\nThe ruleset may seem restrictive, but it provides a standardised way to encode our text. We can also use the guidelines as prompts to consider what we might want to encode."
+    "text": "Become more familiar with the TEI XML file structure\nPractice using the Oxygen XML editor\nStart creating a TEI XML file for the Orwell Political Diaries 1940-41 found here"
   },
   {
-    "objectID": "materials/activity/01-activity1/creating_tei_files.html#document-description",
-    "href": "materials/activity/01-activity1/creating_tei_files.html#document-description",
+    "objectID": "materials/activity/01-activity1/creating_tei_files.html#source-rights-and-usage",
+    "href": "materials/activity/01-activity1/creating_tei_files.html#source-rights-and-usage",
     "title": "Creating a TEI file",
-    "section": "Document description",
-    "text": "Document description\n\nOpen up Oxygen XML and start a new document using all the TEI P5 guidelines.\nFill out details about the document title, publication information and information about the source.\n\nNote: How do you choose what information to include? What’s important?"
+    "section": "Source rights and usage",
+    "text": "Source rights and usage\nWe are going to work on encoding pages from George Orwell’s political diary 1940-41. Several photographs of the diary are available to view on the British Library website. Note the usage terms from the website.\nGeorge Orwell: © With kind permission of the estate of the late Sonia Brownell Orwell. You may not use the material for commercial purposes. Please credit the copyright holder when reusing this work.\nUCL: © Orwell Archive, UCL Library Special Collections.\nWe will stick strictly to these terms and only use the image for educational purposes."
+  },
+  {
+    "objectID": "materials/activity/01-activity1/creating_tei_files.html#why",
+    "href": "materials/activity/01-activity1/creating_tei_files.html#why",
+    "title": "Creating a TEI file",
+    "section": "Why?",
+    "text": "Why?\nA digital version of Orwell’s diary is available on a WordPress page. Like other Orwell writings available online these follow a blog type format. What information is lost when comparing images of the diary with the blog format?\nTEI XML provides us with a way to encode more information. We can include strike through, edits, indicates places, etc. All of this information may be useful for a richer interpretation and understanding of the diary. A better understanding of the diary helps us understand the time, the people and, I daresay, the humanity of the moment."
+  },
+  {
+    "objectID": "materials/activity/01-activity1/creating_tei_files.html#xml-and-tei",
+    "href": "materials/activity/01-activity1/creating_tei_files.html#xml-and-tei",
+    "title": "Creating a TEI file",
+    "section": "XML and TEI",
+    "text": "XML and TEI\nThe XML files is a series of tags such as <text>.\nThis line tells us we are using XML version 1 and the file encoding. This line is needed but it beyond the scope of our session to delve into all the details.\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\nNext we specify the rules we want to follow.\n<?xml-model href=\"http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng\" type=\"application/xml\" schematypens=\"http://relaxng.org/ns/structure/1.0\"?>\n<?xml-model href=\"http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng\" type=\"application/xml\" schematypens=\"http://purl.oclc.org/dsdl/schematron\"?>\nWe are specifying the particular xml models we want to use. An XML model has a tree structure - that is, a particular <node> may by within other specific <nodes>.\nWait, what? That may sound confusing but let us look at the teiHeader section of our file.\n<teiHeader>\n    <fileDesc>\n       <titleStmt>\n          <title>Title</title>\n       </titleStmt>\n       <publicationStmt>\n          <p>Publication Information</p>\n       </publicationStmt>\n       <sourceDesc>\n          <p>Information about the source</p>\n       </sourceDesc>\n    </fileDesc>\n</teiHeader>\nAs a tree, this section look like this.\n\n\n\n\n\nWithin the XML model, a teiHeader can contain several other nodes including fileDesc. In fileDesc, the titleStml, publicationStmt and sourceDesc are allowed. These links will take you to the TEI documentation which is available online. The remainder of the file contains the text node, within which is the body and in that is a paragraph.\nThe ruleset (guidelines) may seem restrictive, but it provides a standardised way to encode our text. We can also use the guidelines as prompts to consider what we might want to encode."
   },
   {
     "objectID": "materials/activity/01-activity1/creating_tei_files.html#helpful-oxygen-xml",
@@ -84,10 +98,24 @@
     "text": "Helpful Oxygen XML\nThe Oxygen XML interface is designed to help you.\n\nIn the bottom left is a tree, much like the screenshot above. If you click on the a node name, such as fileDesc, all of the child nodes are selected (see below image).\n\n\n\n\n\nIn the top right are two tabs: attributes and model. The model tab shows the rules for the selected node. If we select the fileDesc node then we see a description of the node from the TEI guidelines, the possible child nodes (titleStmt, publicationStmt) and the possible attributes. An attribute is information attached to the node.\n\n\n\n\n\n\n\nThe attributes tab allows you to easily change an attribute of a node. More on that in the second activity.\nIn the Text tab (where the file text is shown) you can create a new node by opening a < bracket. Oxygen XML will then show you a list of the available nodes (keeping within the TEI rules). For instance, you can create a location node as a child node of p (paragraph)."
   },
   {
-    "objectID": "materials/activity/01-activity1/creating_tei_files.html#encoding-text-structure",
-    "href": "materials/activity/01-activity1/creating_tei_files.html#encoding-text-structure",
+    "objectID": "materials/activity/01-activity1/creating_tei_files.html#goal",
+    "href": "materials/activity/01-activity1/creating_tei_files.html#goal",
     "title": "Creating a TEI file",
-    "section": "Encoding text structure",
-    "text": "Encoding text structure\n\nWrite some or all of the text from a page of the Orwell diary.\nAdd structural information. For instance, the\n\nnode to indicate a paragraph. If you include dates then use <date when=““>text</date>\nClick on the Author tab. What does it show you? Spend a few minutes looking at going through the interface and looking at the different options."
+    "section": "Goal",
+    "text": "Goal\nWe want to have a version of Orwell’s diary entries in an XML format. In this first activity, we will create a file containing the Political Diary text with file information in the TEI header and structural information (paragraphs and page numbers)."
+  },
+  {
+    "objectID": "materials/activity/01-activity1/creating_tei_files.html#steps",
+    "href": "materials/activity/01-activity1/creating_tei_files.html#steps",
+    "title": "Creating a TEI file",
+    "section": "Steps",
+    "text": "Steps\n\nCreate a TEI P5 file (see above). Add to the file the file title, author, publication authority, source description and details of the project. Save the file.\nAdd the paragraphs and page numbers.\n\n\nHelpful files and links\n\nUniversity of Warwick students can access diary page plain text here. You will need to put this text into a TEI XML file in Oxygen XML.\nThe TEI group have information about the TEI header. There is also a tutorial on the teibyexample.org page which details ‘The TEI Header’.\nEach TEI element has documentation online. Guidance on interpreting the guidance is below. For this activity, you are encoding the position of paragraphs with the p element and page beginnings with the pb element. Note: the page break for page 55 will be <pb n=“55”/>."
+  },
+  {
+    "objectID": "materials/activity/01-activity1/creating_tei_files.html#interpreting-the-documentation",
+    "href": "materials/activity/01-activity1/creating_tei_files.html#interpreting-the-documentation",
+    "title": "Creating a TEI file",
+    "section": "Interpreting the Documentation",
+    "text": "Interpreting the Documentation\nTEI provide online documentation for each version of the guidelines. The current version of the guidelines is P5. These guidelines cover a lot of different use cases designed to help academics capture lots of different parts of a source.\nWhen you first look at the documentation it can be tricky to understand. To help you, let us consider the page for the pb element. There is a description of the element an a link to a grouping of similar elements (here the grouping of Milestone Elements is relevant).\n\nThe pb element is part of the ‘core elements’. James Cummings has an excellent set of slides about core components here."
   }
 ]
