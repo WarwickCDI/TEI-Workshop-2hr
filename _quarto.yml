@@ -17,6 +17,8 @@ website:
           text: "Introduction"
         - href: materials/activity/01-activity1/creating_tei_files.qmd
           text: "Creating TEI files"
+        - href: materials/activity/02-activity2/dates_places_editorial.qmd
+          text: "Dates, places and editorial"
         - href: materials/activity/00-reading-documentation/reading_documentation.qmd
           text: "Reading the documentation"
 format:
