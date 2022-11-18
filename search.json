@@ -110,12 +110,5 @@
     "title": "Creating a TEI file",
     "section": "Steps",
     "text": "Steps\n\nCreate a TEI P5 file (see above). Add to the file the file title, author, publication authority, source description and details of the project. Save the file.\nAdd the paragraphs and page numbers.\n\n\nHelpful files and links\n\nUniversity of Warwick students can access diary page plain text here. You will need to put this text into a TEI XML file in Oxygen XML.\nThe TEI group have information about the TEI header. There is also a tutorial on the teibyexample.org page which details ‘The TEI Header’.\nEach TEI element has documentation online. Guidance on interpreting the guidance is below. For this activity, you are encoding the position of paragraphs with the p element and page beginnings with the pb element. Note: the page break for page 55 will be <pb n=“55”/>."
-  },
-  {
-    "objectID": "materials/activity/01-activity1/creating_tei_files.html#interpreting-the-documentation",
-    "href": "materials/activity/01-activity1/creating_tei_files.html#interpreting-the-documentation",
-    "title": "Creating a TEI file",
-    "section": "Interpreting the Documentation",
-    "text": "Interpreting the Documentation\nTEI provide online documentation for each version of the guidelines. The current version of the guidelines is P5. These guidelines cover a lot of different use cases designed to help academics capture lots of different parts of a source.\nWhen you first look at the documentation it can be tricky to understand. To help you, let us consider the page for the pb element. There is a description of the element an a link to a grouping of similar elements (here the grouping of Milestone Elements is relevant).\n\nThe pb element is part of the ‘core elements’. James Cummings has an excellent set of slides about core components here."
   }
 ]
