@@ -1,0 +1,32 @@
+---
+title: "Reading documentation"
+author: "James Tripp"
+format: html
+---
+
+# Reading Documentation
+
+TEI provide online documentation for each version of [the guidelines](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html). The current version of the guidelines is P5. These guidelines cover a lot of different use cases designed to help academics capture lots of different parts of a source.
+
+When you first look at the documentation it can be tricky to understand. To help you, let us consider [the page for the pb element.](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html) There is a description of the element an a link to a grouping of similar elements (here the grouping of Milestone Elements is relevant).
+
+![](images/paste-B57B779E.png)
+
+The pb element is part of the 'core elements'. Dr James Cummings has an excellent set of slides about core components. You can see the slides by going [here](https://slides.com/jamescummings/teistructure-core) or viewing them below.
+
+```{=html}
+<iframe src="https://slides.com/jamescummings/teistructure-core/embed" width="576" height="420" title="TEI Structure and Basic Core Components" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+
+</iframe>
+```
+Elements can have attributes. For example, \<pb n="55"/\> is a the pb element with the attribute n which has a value of 55. That indicates the start of page number 55. The is indicated by the @n in attributes.
+
+![](images/paste-1F33002A.png)
+
+Elements are contained within other elements. The pb element can be contained within the body element (as it is in the Orwell diary document) as well as any other element listed in the 'Contained by' section.
+
+![](images/paste-CBBCE165.png)
+
+Another helpful section are the examples. These examples may not include your use case, but are reasonable guides. For instance, if you wanted to include the images of diary page then you would use the face attribute of the pb element.
+
+![](images/paste-3E537ADB.png)
