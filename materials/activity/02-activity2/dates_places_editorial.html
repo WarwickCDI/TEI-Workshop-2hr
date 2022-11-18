@@ -8,7 +8,7 @@
 
 <meta name="author" content="James Tripp">
 
-<title>TEI Introduction - Reading documentation</title>
+<title>TEI Introduction - Dates, places and editorial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,11 +62,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../../styles.css">
-<meta property="og:title" content="TEI Introduction - Reading documentation">
-<meta property="og:description" content="TEI provide online documentation for each version of the guidelines. The current version of the guidelines is P5.">
+<meta property="og:title" content="TEI Introduction - Dates, places and editorial">
+<meta property="og:description" content="At this point, you have a TEI XML file which contains:">
 <meta property="og:site-name" content="TEI Introduction">
-<meta name="twitter:title" content="TEI Introduction - Reading documentation">
-<meta name="twitter:description" content="TEI provide online documentation for each version of the guidelines. The current version of the guidelines is P5.">
+<meta name="twitter:title" content="TEI Introduction - Dates, places and editorial">
+<meta name="twitter:description" content="At this point, you have a TEI XML file which contains:">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Reading documentation</h1>
+      <h1 class="quarto-secondary-nav-title">Dates, places and editorial</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -122,12 +122,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../materials/activity/02-activity2/dates_places_editorial.html" class="sidebar-item-text sidebar-link">Dates, places and editorial</a>
+  <a href="../../../materials/activity/02-activity2/dates_places_editorial.html" class="sidebar-item-text sidebar-link active">Dates, places and editorial</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../materials/activity/00-reading-documentation/reading_documentation.html" class="sidebar-item-text sidebar-link active">Reading the documentation</a>
+  <a href="../../../materials/activity/00-reading-documentation/reading_documentation.html" class="sidebar-item-text sidebar-link">Reading the documentation</a>
   </div>
 </li>
     </ul>
@@ -139,7 +139,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#reading-documentation" id="toc-reading-documentation" class="nav-link active" data-scroll-target="#reading-documentation">Reading Documentation</a></li>
+  <li><a href="#aims" id="toc-aims" class="nav-link active" data-scroll-target="#aims">Aims</a></li>
+  <li><a href="#so-far" id="toc-so-far" class="nav-link" data-scroll-target="#so-far">So far</a></li>
+  <li><a href="#enrichment" id="toc-enrichment" class="nav-link" data-scroll-target="#enrichment">Enrichment</a></li>
+  <li><a href="#activity-two" id="toc-activity-two" class="nav-link" data-scroll-target="#activity-two">Activity Two</a>
+  <ul class="collapse">
+  <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal">Goal</a></li>
+  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a>
+  <ul class="collapse">
+  <li><a href="#help" id="toc-help" class="nav-link" data-scroll-target="#help">Help</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -148,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Reading documentation</h1>
+<h1 class="title d-none d-lg-block">Dates, places and editorial</h1>
 </div>
 
 
@@ -169,23 +179,57 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="reading-documentation" class="level1">
-<h1>Reading Documentation</h1>
-<p>TEI provide online documentation for each version of <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html">the guidelines</a>. The current version of the guidelines is P5. These guidelines cover a lot of different use cases designed to help academics capture lots of different parts of a source.</p>
-<p>When you first look at the documentation it can be tricky to understand. To help you, let us consider <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html">the page for the pb element.</a> There is a description of the element an a link to a grouping of similar elements (here the grouping of Milestone Elements is relevant).</p>
-<p><img src="images/paste-B57B779E.png" class="img-fluid"></p>
-<p>The pb element is part of the ‘core elements’. Dr James Cummings has an excellent set of slides about core components. You can see the slides by going <a href="https://slides.com/jamescummings/teistructure-core">here</a> or viewing them below.</p>
-<iframe src="https://slides.com/jamescummings/teistructure-core/embed" width="576" height="420" title="TEI Structure and Basic Core Components" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+<section id="aims" class="level1">
+<h1>Aims</h1>
+<ul>
+<li><p>To enrich our TEI document with details such as dates, places and Orwell’s editorial decisions</p></li>
+<li><p>To consider the usefulness of the components of the text which we decide to include in our TEI XML file</p></li>
+</ul>
+</section>
+<section id="so-far" class="level1">
+<h1>So far</h1>
+<p>At this point, you have a TEI XML file which contains:</p>
+<ol type="1">
+<li>A TEI header with information about the diaries</li>
+<li>The text from the diaries in the &lt;text&gt; tag with the body, paragraphs and page numbers.</li>
+</ol>
+<p>If you are a University of Warwick student then you can download a suitable TEI XML file from <a href="https://livewarwickac-my.sharepoint.com/:u:/g/personal/pssnac_live_warwick_ac_uk/EflqhRSlo2FMrqpLacCpbfkBW3UeSCIbkNbQvbvyu1zLpw?e=oukDi7">here</a>.</p>
+</section>
+<section id="enrichment" class="level1">
+<h1>Enrichment</h1>
+<p>We have included basic information about the structure of the text. Pages and paragraphs are important, but there is much more in the images such as dates, places, newspapers, deletions and insertions.</p>
+<p>Consider the importance of each.</p>
+<ul>
+<li><p>Dates are particularly important in diaries as mood, circumstance and, as in the case of a period like the second world war, considerable changes in global and possibly local events.</p></li>
+<li><p>Place helps situate and offer interpretive insights in humanities work [ref to spatial turn].</p></li>
+<li><p>Entities such as newspapers or people may indicate relationships or, as in this case, typical left leaning periodicals which are read by Orwell.</p></li>
+<li><p>Deletions and insertions offer a reflection of the author - why did Orwell delete sections at the end of diary segment what does that tell you about his state of mind?</p></li>
+</ul>
+<p>Each helps us to gain a richer understanding of the source material and allow us to improve our scholarship. Furthermore, tagging these items enables them to be machine readable. If we had a fully TEI encoded copy of the entire diary then we could, possibly, count the references to newspapers across the entire war period sorted by month, or perhaps all the text deleted by Orwell which we feed into a Natural Language Processing AI model to identify the lexical structures most disliked by the author.</p>
+<p>Not to mention, we could also create a rich scholarly website enabling academics to view and investigate the diary in new, interesting and stimulating ways, allowing for new academic inquiries. A good example of this are the <a href="http://godwindiary.bodleian.ox.ac.uk/index2.html">William Godwin Diaries</a>.</p>
+</section>
+<section id="activity-two" class="level1">
+<h1>Activity Two</h1>
+<section id="goal" class="level2">
+<h2 class="anchored" data-anchor-id="goal">Goal</h2>
+<p>We want to add dates, places, deletions and additions to the Orwell Diary TEI XML files.</p>
+</section>
+<section id="steps" class="level2">
+<h2 class="anchored" data-anchor-id="steps">Steps</h2>
+<ol type="1">
+<li>Add the date tag to dates.</li>
+<li>Identify locations and encapsulate each location in the places tag. There relevant indicate your certainty that this is a location. You may want to add latitude and longitude co-ordinate (see help below).</li>
+<li>Indicate text which has been deleted using the del tag.</li>
+<li>Indicate inserted text with the add tag. Be sure to provide a place for the addition and how it should be rendered.</li>
+</ol>
+<section id="help" class="level3">
+<h3 class="anchored" data-anchor-id="help">Help</h3>
+<p>We have a few new tags to look at.</p>
+<p>Dates are marked up using the date tag. The tag has a when attribute to record the actual date. This make sense if we want to accurately record dates even when some has written ‘midweek’ or ‘term 2 - week 9’. For our purposes, we can record a date as shown below.</p>
 
-</iframe>
-<p>Elements can have attributes. For example, &lt;pb n=“55”/&gt; is a the pb element with the attribute n which has a value of 55. That indicates the start of page number 55. The is indicated by the <span class="citation" data-cites="n">@n</span> in attributes.</p>
-<p><img src="images/paste-1F33002A.png" class="img-fluid"></p>
-<p>Elements are contained within other elements. The pb element can be contained within the body element (as it is in the Orwell diary document) as well as any other element listed in the ‘Contained by’ section.</p>
-<p><img src="images/paste-CBBCE165.png" class="img-fluid"></p>
-<p>Another helpful section are the examples. These examples may not include your use case, but are reasonable guides. For instance, if you wanted to include the images of diary page then you would use the face attribute of the pb element.</p>
-<p><img src="images/paste-3E537ADB.png" class="img-fluid"></p>
 
-
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

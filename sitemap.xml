@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/WarwickCDI/TEI-Workshop-2hr/index.html</loc>
-    <lastmod>2022-11-18T13:12:22.840Z</lastmod>
+    <lastmod>2022-11-18T14:00:42.394Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/WarwickCDI/TEI-Workshop-2hr/materials/slides/introduction.html</loc>
-    <lastmod>2022-11-18T13:12:27.120Z</lastmod>
+    <lastmod>2022-11-18T14:00:47.422Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/WarwickCDI/TEI-Workshop-2hr/materials/activity/01-activity1/creating_tei_files.html</loc>
-    <lastmod>2022-11-18T13:12:27.928Z</lastmod>
+    <lastmod>2022-11-18T14:00:48.198Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/WarwickCDI/TEI-Workshop-2hr/materials/activity/00-reading-documentation/reading_documentation.html</loc>
-    <lastmod>2022-11-18T13:12:28.260Z</lastmod>
+    <lastmod>2022-11-18T14:00:48.514Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/WarwickCDI/TEI-Workshop-2hr/materials/activity/02-activity2/dates_places_editorial.html</loc>
+    <lastmod>2022-11-18T14:00:48.850Z</lastmod>
   </url>
 </urlset>

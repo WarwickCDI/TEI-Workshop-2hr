@@ -117,5 +117,26 @@
     "title": "Reading documentation",
     "section": "",
     "text": "Reading Documentation\nTEI provide online documentation for each version of the guidelines. The current version of the guidelines is P5. These guidelines cover a lot of different use cases designed to help academics capture lots of different parts of a source.\nWhen you first look at the documentation it can be tricky to understand. To help you, let us consider the page for the pb element. There is a description of the element an a link to a grouping of similar elements (here the grouping of Milestone Elements is relevant).\n\nThe pb element is part of the ‘core elements’. Dr James Cummings has an excellent set of slides about core components. You can see the slides by going here or viewing them below.\n\n\n\nElements can have attributes. For example, <pb n=“55”/> is a the pb element with the attribute n which has a value of 55. That indicates the start of page number 55. The is indicated by the @n in attributes.\n\nElements are contained within other elements. The pb element can be contained within the body element (as it is in the Orwell diary document) as well as any other element listed in the ‘Contained by’ section.\n\nAnother helpful section are the examples. These examples may not include your use case, but are reasonable guides. For instance, if you wanted to include the images of diary page then you would use the face attribute of the pb element."
+  },
+  {
+    "objectID": "materials/activity/02-activity2/dates_places_editorial.html",
+    "href": "materials/activity/02-activity2/dates_places_editorial.html",
+    "title": "Dates, places and editorial",
+    "section": "",
+    "text": "To enrich our TEI document with details such as dates, places and Orwell’s editorial decisions\nTo consider the usefulness of the components of the text which we decide to include in our TEI XML file"
+  },
+  {
+    "objectID": "materials/activity/02-activity2/dates_places_editorial.html#goal",
+    "href": "materials/activity/02-activity2/dates_places_editorial.html#goal",
+    "title": "Dates, places and editorial",
+    "section": "Goal",
+    "text": "Goal\nWe want to add dates, places, deletions and additions to the Orwell Diary TEI XML files."
+  },
+  {
+    "objectID": "materials/activity/02-activity2/dates_places_editorial.html#steps",
+    "href": "materials/activity/02-activity2/dates_places_editorial.html#steps",
+    "title": "Dates, places and editorial",
+    "section": "Steps",
+    "text": "Steps\n\nAdd the date tag to dates.\nIdentify locations and encapsulate each location in the places tag. There relevant indicate your certainty that this is a location. You may want to add latitude and longitude co-ordinate (see help below).\nIndicate text which has been deleted using the del tag.\nIndicate inserted text with the add tag. Be sure to provide a place for the addition and how it should be rendered.\n\n\nHelp\nWe have a few new tags to look at.\nDates are marked up using the date tag. The tag has a when attribute to record the actual date. This make sense if we want to accurately record dates even when some has written ‘midweek’ or ‘term 2 - week 9’. For our purposes, we can record a date as shown below."
   }
 ]
