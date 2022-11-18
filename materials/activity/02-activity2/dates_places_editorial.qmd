@@ -45,17 +45,26 @@ We want to add dates, places, deletions and additions to the Orwell Diary TEI XM
 
 ## Steps
 
-1.  Add the date tag to dates.
-2.  Identify locations and encapsulate each location in the places tag. There relevant indicate your certainty that this is a location. You may want to add latitude and longitude co-ordinate (see help below).
-3.  Indicate text which has been deleted using the del tag.
-4.  Indicate inserted text with the add tag. Be sure to provide a place for the addition and how it should be rendered.
+1.  Add the date element to dates in the text.
+2.  Identify place names and encapsulate each place name in the placeName element. There relevant indicate your certainty that this is a location. You may want to add latitude and longitude co-ordinate (see help below).
+3.  Add
+4.  Indicate text which has been deleted using the del element.
+5.  Indicate inserted text with the add element. Be sure to provide a place for the addition and how it should be rendered.
 
 ### Help
 
-We have a few new tags to look at.
+We have a few new elements to look at.
 
-Dates are marked up using the date tag. The tag has a when attribute to record the actual date. This make sense if we want to accurately record dates even when some has written 'midweek' or 'term 2 - week 9'. For our purposes, we can record a date as shown below.
+**Dates** are marked up using the date element. The element has a when attribute to record the actual date. This make sense if we want to accurately record dates even when some has written 'midweek' or 'term 2 - week 9'. For our purposes, we can record a date as shown below.
 
-```{=xml}
-<date when="1940-09-21">21.9.40.</date>
-```
+![](images/paste-85A38554.png){fig-align="center"}
+
+**Place names** indicates, to no surprise, the name of a place. The name of the place should be within the PlaceName element. You can add an attribute to indicate how certain you are that this is a placename.
+
+![](images/paste-D733B6B2.png){fig-align="center"}
+
+You may also want to add the spatial co-ordinates of a place. The geo element, which can be placed in the location element within placeName, lets you specify the geolocation of the place. For instance, this would look like the below.
+
+![](images/paste-1253576B.png){fig-align="center"}
+
+For completeness, you may want to indicate the project of the co-ordinates (discussion of this goes beyond this page). We need not worry in our case because our co-ordinate projection is [WGS 84](http://wiki.gis.com/wiki/index.php/WGS84) and co-ordinates within geo are assumed to follow WGS, see [the documentation on the varieties of location](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDGEOGva).
