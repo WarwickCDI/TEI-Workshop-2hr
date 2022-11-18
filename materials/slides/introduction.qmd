@@ -1,6 +1,6 @@
 ---
 title: "Introduction to TEI"
-author: "James Tripp"
+author: "Dr James Tripp"
 institute: University of Warwick
 execute: 
   eval: false
@@ -13,80 +13,67 @@ format:
     footer: "https://warwickcdi.github.io/TEI-Workshop-2hr/materials/slides/introduction.html"
     css: ["theme/theme.css"]
 editor: source
+bibliography: references.bib
 ---
 
 # Plan
 
-* Why?
-* TEI
-* Editors
+-   Digital editions
+-   Text Encoding Initiative
+-   Today
 
-# Why
+# Digital editions
 
-## Digital Editions
+## Examples
 
-* What are Digital Editions?
+::: columns
+::: {.column width="50%"}
+[![William Godwin Diary](images/paste-608B359A.png){fig-align="center"}](http://godwindiary.bodleian.ox.ac.uk/index2.html)
 
-. . .
+[![Catologue Digital Editions](images/paste-5E0714E4.png){fig-align="center"}](https://dig-ed-cat.acdh.oeaw.ac.at/)
+:::
 
-* [William Godwins Diary](http://godwindiary.bodleian.ox.ac.uk/index2.html)
+::: {.column width="50%"}
+[![Van Gogh Letters](images/paste-DCC783BB.png){fig-align="center"}](https://teipublisher.com/exist/apps/vangogh/let001.xml)
 
-. . .
+[![TEI Publisher Registry](images/paste-685D81B8.png){fig-align="center"}](https://www.e-editiones.org/map/)
+:::
+:::
 
-* [Jane Austen's Fictional Manuscripts](https://janeausten.ac.uk/about/overview.html)
+## Why?
 
-. . .
+> "Scholarly digital editions (or SDEs) offer the opportunity to overcome the limitations of print technology. The new possibilities have a fundamental impact on the theory and methodology of critical editing in general. The large corpus of research literature on digital scholarly editing is full of discussion about new features, functions, properties and characteristics of this kind of scholarly endeavour and how this changes our practices, our theoretical grounds and our goals."
 
-* [Another example]() 
-  
-And far more.
-  
-## But, why?
-
-There are times when academic resources are encoded in a digital textual 
-form. For instance,
-
-* Historical literature
-* Speeches
-* Poetry
-
-. . .
-
-What does this offer?
-
-* searchable
-* long term archiving
-* computational analysis
-* including additional information
-
-## The challenge
-
-* finding a text format and rules
-* deciding what to include
-* using helpful software
-
-# Text Encoding Initiative
-
-## Community
-
-* The TEI consortium provide rules (or, rather, [guidelines](https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html))
-* There is an active community (e.g., recent TEI 2022 conference, [@TEI2022](https://twitter.com/TEI2022))
-* Uses a plain text XML file
+@sahle2016a
 
 ## What?
 
-From Moby Dick (see details [here](https://teibyexample.org/examples/TBED05v00.htm#melville))
+-   **Digitise and archive the document.** Create a representation of a physical document (e.g., letter from Van Gogh) in a digital plain text file.
 
-```{xml}
-<div xmlns="http://www.tei-c.org/ns/1.0" type="chapter">
-<pb n="214"/>
-<head>CHAPTER XL</head>
-<head>Midnight, Forecastle</head>
-<sp>
-<speaker>Harpooneers and sailors</speaker>
-<stage>(Foresail rises and discovers the watch standing, lounging, leaning, and lying in various attitudes, all singing in chorus.)</stage>
-<l>Farewell and adieu to you, Spanish ladies!</l>
-<l>Farewell and adieu to you, ladies of Spain!</l>
-<l>Our captain's commanded.--</l>
-</sp>
-```
+-   **Enrich the text and encode additional features.** Structure such as paragraphs, strikethrough, editorial comments, uncertainty.
+
+-   **Machine readable.** Can be turned into rich websites such as Godwin's diary and filtered for computational analysis.
+
+# Text Encoding Initiative
+
+## Who?
+
+![](images/paste-8F195571.png)
+
+## How?
+
+-   Publish guidelines for encoding documents
+
+-   Create XML files using text editors which read the guidelines
+
+-   Community offering training, conferences and journals articles
+
+# Today
+
+-   Use the TEI guidelines
+
+-   Create a digital version of entries from George Orwell's Political Diaries
+
+-   Use the OxygenXML editor
+
+# References
