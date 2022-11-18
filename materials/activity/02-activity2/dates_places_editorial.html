@@ -90,6 +90,18 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../../index.html">
  <span class="menu-text">Outline</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../materials/activity/01-activity1/creating_tei_files.html" aria-current="page">
+ <span class="menu-text">Activity 1</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../materials/activity/02-activity2/dates_places_editorial.html">
+ <span class="menu-text">Activity 2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../materials/activity/00-reading-documentation/reading_documentation.html">
+ <span class="menu-text">Documentation</span></a>
+  </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
@@ -117,17 +129,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../materials/activity/01-activity1/creating_tei_files.html" class="sidebar-item-text sidebar-link">Creating TEI files</a>
+  <a href="../../../materials/activity/01-activity1/creating_tei_files.html" class="sidebar-item-text sidebar-link">Activity 1</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../materials/activity/02-activity2/dates_places_editorial.html" class="sidebar-item-text sidebar-link active">Dates, places and editorial</a>
+  <a href="../../../materials/activity/02-activity2/dates_places_editorial.html" class="sidebar-item-text sidebar-link active">Activity 2</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../materials/activity/00-reading-documentation/reading_documentation.html" class="sidebar-item-text sidebar-link">Reading the documentation</a>
+  <a href="../../../materials/activity/00-reading-documentation/reading_documentation.html" class="sidebar-item-text sidebar-link">Documentation</a>
   </div>
 </li>
     </ul>
@@ -145,10 +157,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#activity-two" id="toc-activity-two" class="nav-link" data-scroll-target="#activity-two">Activity Two</a>
   <ul class="collapse">
   <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal">Goal</a></li>
-  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a>
-  <ul class="collapse">
-  <li><a href="#help" id="toc-help" class="nav-link" data-scroll-target="#help">Help</a></li>
-  </ul></li>
+  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -219,12 +228,20 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li>Add the date element to dates in the text.</li>
 <li>Identify place names and encapsulate each place name in the placeName element. There relevant indicate your certainty that this is a location. You may want to add latitude and longitude co-ordinate (see help below).</li>
-<li>Add</li>
+<li>Mark up newspaper names.</li>
 <li>Indicate text which has been deleted using the del element.</li>
 <li>Indicate inserted text with the add element. Be sure to provide a place for the addition and how it should be rendered.</li>
 </ol>
-<section id="help" class="level3">
-<h3 class="anchored" data-anchor-id="help">Help</h3>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>We have a few new elements to look at.</p>
 <p><strong>Dates</strong> are marked up using the date element. The element has a when attribute to record the actual date. This make sense if we want to accurately record dates even when some has written ‘midweek’ or ‘term 2 - week 9’. For our purposes, we can record a date as shown below.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -232,6 +249,7 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/paste-85A38554.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
+<p><a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html">TEI documentation: &lt;date&gt;</a></p>
 <p><strong>Place names</strong> indicates, to no surprise, the name of a place. The name of the place should be within the PlaceName element. You can add an attribute to indicate how certain you are that this is a placename.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -244,10 +262,46 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/paste-1253576B.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>For completeness, you may want to indicate the project of the co-ordinates (discussion of this goes beyond this page). We need not worry in our case because our co-ordinate projection is <a href="http://wiki.gis.com/wiki/index.php/WGS84">WGS 84</a> and co-ordinates within geo are assumed to follow WGS, see <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDGEOGva">the documentation on the varieties of location</a>.</p>
+<p>For completeness, you may want to indicate the project of the co-ordinates (discussion of this goes beyond this page). We need not worry in our case because our co-ordinate projection is <a href="http://wiki.gis.com/wiki/index.php/WGS84">WGS84</a> and co-ordinates within geo are assumed to follow WGS84, see <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDGEOGva">the documentation on the varieties of location</a>.</p>
+<p><a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-placeName.html">TEI documentation: &lt;placeName&gt;</a></p>
+<p>Use the <strong>name</strong> element with the attribute type to indicate a newspaper. In Orwell’s diary this may look something like.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-2CE82EEC.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-name.html">TEI documentation: &lt;name&gt;</a></p>
+<p>You can encode <strong>deleted</strong> text via the del element. The rend attribute indicates how the deletion should be displayed when the document is rendered into PDF or HTML. For our purposes, we will treat deletions as an overstrike.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-8B527B1E.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-del.html">TEI documentation: <del></del></a></p>
+<p>Text which has been added to the document is represented using the <strong>add</strong> element. We would usually indicate the position of the addition using the place attribute and render it as an insertion in outputs. For example, adding the word four by writing it above would be.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-481664DD.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-add.html">TEI documentation: &lt;add&gt;</a></p>
+<p>Note the place indication of ‘supralinear’. I have also indicated that this is the second in a series of actions using the seq attribute. In my document, I assume the number 4 is removed and then the word four is added above.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-0AB37CA2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>Finally, we can show text is highlighted (hi) by underline like so.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-20FE8E7A.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-hi.html">TEI documentation: &lt;hi&gt;</a></p>
+</div>
+</div>
 
 
-</section>
 </section>
 </section>
 
