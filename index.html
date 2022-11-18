@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -107,44 +107,10 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Outline</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
-      </button>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./materials/slides/introduction.html" class="sidebar-item-text sidebar-link">Introduction</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./materials/activity/01-activity1/creating_tei_files.html" class="sidebar-item-text sidebar-link">Activity 1</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./materials/activity/02-activity2/dates_places_editorial.html" class="sidebar-item-text sidebar-link">Activity 2</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./materials/activity/00-reading-documentation/reading_documentation.html" class="sidebar-item-text sidebar-link">Documentation</a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -155,7 +121,6 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
   </ul></li>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
   <li><a href="#instructor" id="toc-instructor" class="nav-link" data-scroll-target="#instructor">Instructor</a></li>
   </ul>
 </nav>
@@ -165,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Outline</h1>
+<h1 class="title">Outline</h1>
 </div>
 
 
@@ -211,17 +176,19 @@ Pre Work
 <!-- See https://quarto.org/docs/visual-editor/content.html -->
 <p>📅 TBC</p>
 <p>⏰TBC</p>
-<p>🏠Location</p>
+<p>🏠<a href="http://campus-cms.warwick.ac.uk/share/2a3fd39bf9cd08107f393510c5944d46">R0.39</a></p>
 <hr>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>How do you encode a text in digital form? Historical texts are rich with information. Simple text is not enough. Some text may be highlighted or crossed out. There may be locations or people referred to. Indeed, the encoder may choose to add annotations or other interpretive elements. The Text Encoding Initiative guidelines suggest how we can encode that data in an XML format. Using XML produces rich digital formats which can turned into digital editions and be explored using program languages such as R and Python.</p>
-<p>In this workshop you will:</p>
+<p>How do you encode a text in digital form?</p>
+<p>Texts are often quite complicated and nuanced. Plain text is not good enough. For instance, how do we include:</p>
 <ul>
-<li><p>Get hands on experience using the Oxygen XML editor to encode a TEI document</p></li>
-<li><p>Explore the different encoding options available</p></li>
-<li><p>Consider the impact of the guidelines on text encoding and your own decisions on what to encode</p></li>
+<li>Locations or places</li>
+<li>Editorial decisions where text is removed or additions</li>
 </ul>
+<p>and, as we encode the text, we may be uncertain about parts.</p>
+<p>Files written in XML following the Text Encoding Initiative (TEI) guidelines allow us to include much more than plain text.</p>
+<p>In this workshop we create an encoding of pages from George Orwell’s Political Diary using the TEI Guidelines.</p>
 <section id="schedule" class="level3">
 <h3 class="anchored" data-anchor-id="schedule">Schedule</h3>
 
@@ -235,16 +202,16 @@ Pre Work
 </thead>
 <tbody>
 <tr class="odd">
-<td>Introduction</td>
+<td><a href="./materials/slides/introduction.html">Introduction</a></td>
 <td style="text-align: center;">10</td>
 </tr>
 <tr class="even">
-<td><a href="./materials/activity/01-activity1/creating_tei_files.html">Creating TEI Files</a></td>
+<td><a href="./materials/activity/01-activity1/creating_tei_files.html">Activity 1</a></td>
 <td style="text-align: center;">30</td>
 </tr>
 <tr class="odd">
-<td>Activity 2</td>
-<td style="text-align: center;">15</td>
+<td><a href="./materials/activity/02-activity2/dates_places_editorial.html">Activity 2</a></td>
+<td style="text-align: center;">30</td>
 </tr>
 <tr class="even">
 <td>Roundup and session close</td>
@@ -253,14 +220,6 @@ Pre Work
 </tbody>
 </table>
 </section>
-</section>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
-<ul>
-<li>Use the Oxygen XML software to create a TEI encoded document</li>
-<li>Understand fundamental XML tags</li>
-<li>Consider how TEI can academic work</li>
-</ul>
 </section>
 <section id="instructor" class="level2">
 <h2 class="anchored" data-anchor-id="instructor">Instructor</h2>

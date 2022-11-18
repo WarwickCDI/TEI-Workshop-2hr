@@ -133,7 +133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -170,44 +170,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Creating a TEI file</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
-      </button>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../materials/slides/introduction.html" class="sidebar-item-text sidebar-link">Introduction</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../materials/activity/01-activity1/creating_tei_files.html" class="sidebar-item-text sidebar-link active">Activity 1</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../materials/activity/02-activity2/dates_places_editorial.html" class="sidebar-item-text sidebar-link">Activity 2</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../materials/activity/00-reading-documentation/reading_documentation.html" class="sidebar-item-text sidebar-link">Documentation</a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -228,10 +194,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#activity-one" id="toc-activity-one" class="nav-link" data-scroll-target="#activity-one">Activity One</a>
   <ul class="collapse">
   <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal">Goal</a></li>
-  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a>
-  <ul class="collapse">
-  <li><a href="#helpful-files-and-links" id="toc-helpful-files-and-links" class="nav-link" data-scroll-target="#helpful-files-and-links">Helpful files and links</a></li>
-  </ul></li>
+  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -241,7 +204,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Creating a TEI file</h1>
+<h1 class="title">Creating a TEI file</h1>
 </div>
 
 
@@ -397,16 +360,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Create a TEI P5 file (see above). Add to the file the file title, author, publication authority, source description and details of the project. Save the file.</li>
 <li>Add the paragraphs and page numbers.</li>
 </ol>
-<section id="helpful-files-and-links" class="level3">
-<h3 class="anchored" data-anchor-id="helpful-files-and-links">Helpful files and links</h3>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li><p>University of Warwick students can access diary page plain text <a href="https://livewarwickac-my.sharepoint.com/:t:/g/personal/pssnac_live_warwick_ac_uk/EVybJzgjsI9OmYiFReoPAlQBLkO9SaYJDw1KJuvboXac8g?e=rQkCgh">here</a>. You will need to put this text into a TEI XML file in Oxygen XML.</p></li>
 <li><p>The TEI group have <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html">information about the TEI header</a>. There is also a <a href="https://teibyexample.org/tutorials/TBED02v00.htm">tutorial on the teibyexample.org page</a> which details ‘The TEI Header’.</p></li>
 <li><p>Each TEI element has documentation online. Guidance on interpreting the guidance is below. For this activity, you are encoding the position of paragraphs with the <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html">p element</a> and page beginnings with the <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html">pb element</a>. Note: the page break for page 55 will be &lt;pb n=“55”/&gt;.</p></li>
 </ul>
+</div>
+</div>
 
 
-</section>
 </section>
 </section>
 

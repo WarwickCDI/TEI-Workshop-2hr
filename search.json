@@ -4,21 +4,14 @@
     "href": "index.html",
     "title": "Outline",
     "section": "",
-    "text": "Pre Work\n\n\n\nOur work will require an editor which can work with TEI XML documents.\nIf you are in R0.39 on Warwick campus then Oxygen XML is already installed.\nAlternatively:\n\nGet access to the Oxygen XML editor in some other way. Some academic institutions have an institutional license. Alternatively, the editor can be purchased for a high price (see price list).\nVisual Studio code (VSCode) is a technical text editor with TEI support. You can download VSCode for free and, after installation, install the tei-publisher-vscode and Red Hat XML extension. The interface is a bit more intimidating and some more advanced TEI features may not be supported. It should be find for the introductory content in this workshop.\n📅 TBC\n⏰TBC\n🏠Location"
+    "text": "Pre Work\n\n\n\nOur work will require an editor which can work with TEI XML documents.\nIf you are in R0.39 on Warwick campus then Oxygen XML is already installed.\nAlternatively:\n\nGet access to the Oxygen XML editor in some other way. Some academic institutions have an institutional license. Alternatively, the editor can be purchased for a high price (see price list).\nVisual Studio code (VSCode) is a technical text editor with TEI support. You can download VSCode for free and, after installation, install the tei-publisher-vscode and Red Hat XML extension. The interface is a bit more intimidating and some more advanced TEI features may not be supported. It should be find for the introductory content in this workshop.\n📅 TBC\n⏰TBC\n🏠R0.39"
   },
   {
     "objectID": "index.html#overview",
     "href": "index.html#overview",
     "title": "Outline",
     "section": "Overview",
-    "text": "Overview\nHow do you encode a text in digital form? Historical texts are rich with information. Simple text is not enough. Some text may be highlighted or crossed out. There may be locations or people referred to. Indeed, the encoder may choose to add annotations or other interpretive elements. The Text Encoding Initiative guidelines suggest how we can encode that data in an XML format. Using XML produces rich digital formats which can turned into digital editions and be explored using program languages such as R and Python.\nIn this workshop you will:\n\nGet hands on experience using the Oxygen XML editor to encode a TEI document\nExplore the different encoding options available\nConsider the impact of the guidelines on text encoding and your own decisions on what to encode\n\n\nSchedule\n\n\n\n\n\nActivity\nTime (mins)\n\n\n\n\nIntroduction\n10\n\n\nCreating TEI Files\n30\n\n\nActivity 2\n15\n\n\nRoundup and session close\n5"
-  },
-  {
-    "objectID": "index.html#learning-objectives",
-    "href": "index.html#learning-objectives",
-    "title": "Outline",
-    "section": "Learning objectives",
-    "text": "Learning objectives\n\nUse the Oxygen XML software to create a TEI encoded document\nUnderstand fundamental XML tags\nConsider how TEI can academic work"
+    "text": "Overview\nHow do you encode a text in digital form?\nTexts are often quite complicated and nuanced. Plain text is not good enough. For instance, how do we include:\n\nLocations or places\nEditorial decisions where text is removed or additions\n\nand, as we encode the text, we may be uncertain about parts.\nFiles written in XML following the Text Encoding Initiative (TEI) guidelines allow us to include much more than plain text.\nIn this workshop we create an encoding of pages from George Orwell’s Political Diary using the TEI Guidelines.\n\nSchedule\n\n\n\n\n\nActivity\nTime (mins)\n\n\n\n\nIntroduction\n10\n\n\nActivity 1\n30\n\n\nActivity 2\n30\n\n\nRoundup and session close\n5"
   },
   {
     "objectID": "index.html#instructor",
@@ -28,39 +21,39 @@
     "text": "Instructor\n\n\nJames Tripp is a Senior Research Software Engineer at the University of Warwick. He has been working at the intersection of research and technology for over 10 years.\nTwitter: @jamestripp_ Email: james.tripp@warwick.ac.uk"
   },
   {
-    "objectID": "materials/slides/introduction.html#digital-editions",
-    "href": "materials/slides/introduction.html#digital-editions",
+    "objectID": "materials/slides/introduction.html#examples",
+    "href": "materials/slides/introduction.html#examples",
     "title": "Introduction to TEI",
-    "section": "Digital Editions",
-    "text": "Digital Editions\n\nWhat are Digital Editions?\n\n\n\nWilliam Godwins Diary\n\n\n\n\nJane Austen’s Fictional Manuscripts\n\n\n\n\nAnother example\n\nAnd far more."
+    "section": "Examples",
+    "text": "Examples\n\n\n\n\n\nWilliam Godwin Diary\n\n\n\n\n\nCatologue Digital Editions\n\n\n\n\n\n\nVan Gogh Letters\n\n\n\n\n\nTEI Publisher Registry"
   },
   {
-    "objectID": "materials/slides/introduction.html#but-why",
-    "href": "materials/slides/introduction.html#but-why",
+    "objectID": "materials/slides/introduction.html#why",
+    "href": "materials/slides/introduction.html#why",
     "title": "Introduction to TEI",
-    "section": "But, why?",
-    "text": "But, why?\nThere are times when academic resources are encoded in a digital textual form. For instance,\n\nHistorical literature\nSpeeches\nPoetry\n\n\nWhat does this offer?\n\nsearchable\nlong term archiving\ncomputational analysis\nincluding additional information"
-  },
-  {
-    "objectID": "materials/slides/introduction.html#the-challenge",
-    "href": "materials/slides/introduction.html#the-challenge",
-    "title": "Introduction to TEI",
-    "section": "The challenge",
-    "text": "The challenge\n\nfinding a text format and rules\ndeciding what to include\nusing helpful software"
-  },
-  {
-    "objectID": "materials/slides/introduction.html#community",
-    "href": "materials/slides/introduction.html#community",
-    "title": "Introduction to TEI",
-    "section": "Community",
-    "text": "Community\n\nThe TEI consortium provide rules (or, rather, guidelines)\nThere is an active community (e.g., recent TEI 2022 conference, @TEI2022)\nUses a plain text XML file"
+    "section": "Why?",
+    "text": "Why?\n\n“Scholarly digital editions (or SDEs) offer the opportunity to overcome the limitations of print technology. The new possibilities have a fundamental impact on the theory and methodology of critical editing in general. The large corpus of research literature on digital scholarly editing is full of discussion about new features, functions, properties and characteristics of this kind of scholarly endeavour and how this changes our practices, our theoretical grounds and our goals.”\n\nSahle (2016)"
   },
   {
     "objectID": "materials/slides/introduction.html#what",
     "href": "materials/slides/introduction.html#what",
     "title": "Introduction to TEI",
     "section": "What?",
-    "text": "What?\nFrom Moby Dick (see details here)\n<div xmlns=\"http://www.tei-c.org/ns/1.0\" type=\"chapter\">\n<pb n=\"214\"/>\n<head>CHAPTER XL</head>\n<head>Midnight, Forecastle</head>\n<sp>\n<speaker>Harpooneers and sailors</speaker>\n<stage>(Foresail rises and discovers the watch standing, lounging, leaning, and lying in various attitudes, all singing in chorus.)</stage>\n<l>Farewell and adieu to you, Spanish ladies!</l>\n<l>Farewell and adieu to you, ladies of Spain!</l>\n<l>Our captain's commanded.--</l>\n</sp>\n\n\n\nhttps://warwickcdi.github.io/TEI-Workshop-2hr/materials/slides/introduction.html"
+    "text": "What?\n\nDigitise and archive the document. Create a representation of a physical document (e.g., letter from Van Gogh) in a digital plain text file.\nEnrich the text and encode additional features. Structure such as paragraphs, strikethrough, editorial comments, uncertainty.\nMachine readable. Can be turned into rich websites such as Godwin’s diary and filtered for computational analysis."
+  },
+  {
+    "objectID": "materials/slides/introduction.html#who",
+    "href": "materials/slides/introduction.html#who",
+    "title": "Introduction to TEI",
+    "section": "Who?",
+    "text": "Who?"
+  },
+  {
+    "objectID": "materials/slides/introduction.html#how",
+    "href": "materials/slides/introduction.html#how",
+    "title": "Introduction to TEI",
+    "section": "How?",
+    "text": "How?\n\nPublish guidelines for encoding documents\nCreate XML files using text editors which read the guidelines\nCommunity offering training, conferences and journals articles"
   },
   {
     "objectID": "materials/activity/01-activity1/creating_tei_files.html",
@@ -109,7 +102,7 @@
     "href": "materials/activity/01-activity1/creating_tei_files.html#steps",
     "title": "Creating a TEI file",
     "section": "Steps",
-    "text": "Steps\n\nCreate a TEI P5 file (see above). Add to the file the file title, author, publication authority, source description and details of the project. Save the file.\nAdd the paragraphs and page numbers.\n\n\nHelpful files and links\n\nUniversity of Warwick students can access diary page plain text here. You will need to put this text into a TEI XML file in Oxygen XML.\nThe TEI group have information about the TEI header. There is also a tutorial on the teibyexample.org page which details ‘The TEI Header’.\nEach TEI element has documentation online. Guidance on interpreting the guidance is below. For this activity, you are encoding the position of paragraphs with the p element and page beginnings with the pb element. Note: the page break for page 55 will be <pb n=“55”/>."
+    "text": "Steps\n\nCreate a TEI P5 file (see above). Add to the file the file title, author, publication authority, source description and details of the project. Save the file.\nAdd the paragraphs and page numbers.\n\n\n\n\n\n\n\nTip\n\n\n\n\nUniversity of Warwick students can access diary page plain text here. You will need to put this text into a TEI XML file in Oxygen XML.\nThe TEI group have information about the TEI header. There is also a tutorial on the teibyexample.org page which details ‘The TEI Header’.\nEach TEI element has documentation online. Guidance on interpreting the guidance is below. For this activity, you are encoding the position of paragraphs with the p element and page beginnings with the pb element. Note: the page break for page 55 will be <pb n=“55”/>."
   },
   {
     "objectID": "materials/activity/00-reading-documentation/reading_documentation.html",
