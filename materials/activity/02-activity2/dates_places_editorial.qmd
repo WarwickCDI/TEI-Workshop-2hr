@@ -1,0 +1,61 @@
+---
+title: "Dates, places and editorial"
+author: "James Tripp"
+format: html
+---
+
+# Aims
+
+-   To enrich our TEI document with details such as dates, places and Orwell's editorial decisions
+
+-   To consider the usefulness of the components of the text which we decide to include in our TEI XML file
+
+# So far
+
+At this point, you have a TEI XML file which contains:
+
+1.  A TEI header with information about the diaries
+2.  The text from the diaries in the \<text\> tag with the body, paragraphs and page numbers.
+
+If you are a University of Warwick student then you can download a suitable TEI XML file from [here](https://livewarwickac-my.sharepoint.com/:u:/g/personal/pssnac_live_warwick_ac_uk/EflqhRSlo2FMrqpLacCpbfkBW3UeSCIbkNbQvbvyu1zLpw?e=oukDi7).
+
+# Enrichment
+
+We have included basic information about the structure of the text. Pages and paragraphs are important, but there is much more in the images such as dates, places, newspapers, deletions and insertions.
+
+Consider the importance of each.
+
+-   Dates are particularly important in diaries as mood, circumstance and, as in the case of a period like the second world war, considerable changes in global and possibly local events.
+
+-   Place helps situate and offer interpretive insights in humanities work \[ref to spatial turn\].
+
+-   Entities such as newspapers or people may indicate relationships or, as in this case, typical left leaning periodicals which are read by Orwell.
+
+-   Deletions and insertions offer a reflection of the author - why did Orwell delete sections at the end of diary segment what does that tell you about his state of mind?
+
+Each helps us to gain a richer understanding of the source material and allow us to improve our scholarship. Furthermore, tagging these items enables them to be machine readable. If we had a fully TEI encoded copy of the entire diary then we could, possibly, count the references to newspapers across the entire war period sorted by month, or perhaps all the text deleted by Orwell which we feed into a Natural Language Processing AI model to identify the lexical structures most disliked by the author.
+
+Not to mention, we could also create a rich scholarly website enabling academics to view and investigate the diary in new, interesting and stimulating ways, allowing for new academic inquiries. A good example of this are the [William Godwin Diaries](http://godwindiary.bodleian.ox.ac.uk/index2.html).
+
+# Activity Two
+
+## Goal
+
+We want to add dates, places, deletions and additions to the Orwell Diary TEI XML files.
+
+## Steps
+
+1.  Add the date tag to dates.
+2.  Identify locations and encapsulate each location in the places tag. There relevant indicate your certainty that this is a location. You may want to add latitude and longitude co-ordinate (see help below).
+3.  Indicate text which has been deleted using the del tag.
+4.  Indicate inserted text with the add tag. Be sure to provide a place for the addition and how it should be rendered.
+
+### Help
+
+We have a few new tags to look at.
+
+Dates are marked up using the date tag. The tag has a when attribute to record the actual date. This make sense if we want to accurately record dates even when some has written 'midweek' or 'term 2 - week 9'. For our purposes, we can record a date as shown below.
+
+```{=xml}
+<date when="1940-09-21">21.9.40.</date>
+```
