@@ -153,19 +153,3 @@ We want to have a version of Orwell's diary entries in an XML format. In this fi
 -   The TEI group have [information about the TEI header](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html). There is also a [tutorial on the teibyexample.org page](https://teibyexample.org/tutorials/TBED02v00.htm) which details 'The TEI Header'.
 
 -   Each TEI element has documentation online. Guidance on interpreting the guidance is below. For this activity, you are encoding the position of paragraphs with the [p element](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html) and page beginnings with the [pb element](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html). Note: the page break for page 55 will be \<pb n="55"/\>.
-
-## Interpreting the Documentation
-
-TEI provide online documentation for each version of [the guidelines](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html). The current version of the guidelines is P5. These guidelines cover a lot of different use cases designed to help academics capture lots of different parts of a source.
-
-When you first look at the documentation it can be tricky to understand. To help you, let us consider [the page for the pb element.](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html) There is a description of the element an a link to a grouping of similar elements (here the grouping of Milestone Elements is relevant).
-
-![](images/paste-B57B779E.png)
-
-The pb element is part of the 'core elements'. James Cummings has an excellent set of slides about core components [here](https://slides.com/jamescummings/teistructure-core).
-
-```{=html}
-<iframe src="https://slides.com/jamescummings/teistructure-core/embed" width="576" height="420" title="TEI Structure and Basic Core Components" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-
-</iframe>
-```
