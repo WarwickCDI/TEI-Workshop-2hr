@@ -110,5 +110,12 @@
     "title": "Creating a TEI file",
     "section": "Steps",
     "text": "Steps\n\nCreate a TEI P5 file (see above). Add to the file the file title, author, publication authority, source description and details of the project. Save the file.\nAdd the paragraphs and page numbers.\n\n\nHelpful files and links\n\nUniversity of Warwick students can access diary page plain text here. You will need to put this text into a TEI XML file in Oxygen XML.\nThe TEI group have information about the TEI header. There is also a tutorial on the teibyexample.org page which details ‘The TEI Header’.\nEach TEI element has documentation online. Guidance on interpreting the guidance is below. For this activity, you are encoding the position of paragraphs with the p element and page beginnings with the pb element. Note: the page break for page 55 will be <pb n=“55”/>."
+  },
+  {
+    "objectID": "materials/activity/00-reading-documentation/reading_documentation.html",
+    "href": "materials/activity/00-reading-documentation/reading_documentation.html",
+    "title": "Reading documentation",
+    "section": "",
+    "text": "Reading Documentation\nTEI provide online documentation for each version of the guidelines. The current version of the guidelines is P5. These guidelines cover a lot of different use cases designed to help academics capture lots of different parts of a source.\nWhen you first look at the documentation it can be tricky to understand. To help you, let us consider the page for the pb element. There is a description of the element an a link to a grouping of similar elements (here the grouping of Milestone Elements is relevant).\n\nThe pb element is part of the ‘core elements’. Dr James Cummings has an excellent set of slides about core components. You can see the slides by going here or viewing them below.\n\n\n\nElements can have attributes. For example, <pb n=“55”/> is a the pb element with the attribute n which has a value of 55. That indicates the start of page number 55. The is indicated by the @n in attributes.\n\nElements are contained within other elements. The pb element can be contained within the body element (as it is in the Orwell diary document) as well as any other element listed in the ‘Contained by’ section.\n\nAnother helpful section are the examples. These examples may not include your use case, but are reasonable guides. For instance, if you wanted to include the images of diary page then you would use the face attribute of the pb element."
   }
 ]
