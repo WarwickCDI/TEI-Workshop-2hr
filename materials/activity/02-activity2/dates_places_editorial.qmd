@@ -47,17 +47,18 @@ We want to add dates, places, deletions and additions to the Orwell Diary TEI XM
 
 1.  Add the date element to dates in the text.
 2.  Identify place names and encapsulate each place name in the placeName element. There relevant indicate your certainty that this is a location. You may want to add latitude and longitude co-ordinate (see help below).
-3.  Add
+3.  Mark up newspaper names.
 4.  Indicate text which has been deleted using the del element.
 5.  Indicate inserted text with the add element. Be sure to provide a place for the addition and how it should be rendered.
 
-### Help
-
+::: callout-tip
 We have a few new elements to look at.
 
 **Dates** are marked up using the date element. The element has a when attribute to record the actual date. This make sense if we want to accurately record dates even when some has written 'midweek' or 'term 2 - week 9'. For our purposes, we can record a date as shown below.
 
 ![](images/paste-85A38554.png){fig-align="center"}
+
+[TEI documentation: \<date\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html)
 
 **Place names** indicates, to no surprise, the name of a place. The name of the place should be within the PlaceName element. You can add an attribute to indicate how certain you are that this is a placename.
 
@@ -67,4 +68,35 @@ You may also want to add the spatial co-ordinates of a place. The geo element, w
 
 ![](images/paste-1253576B.png){fig-align="center"}
 
-For completeness, you may want to indicate the project of the co-ordinates (discussion of this goes beyond this page). We need not worry in our case because our co-ordinate projection is [WGS 84](http://wiki.gis.com/wiki/index.php/WGS84) and co-ordinates within geo are assumed to follow WGS, see [the documentation on the varieties of location](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDGEOGva).
+For completeness, you may want to indicate the project of the co-ordinates (discussion of this goes beyond this page). We need not worry in our case because our co-ordinate projection is [WGS84](http://wiki.gis.com/wiki/index.php/WGS84) and co-ordinates within geo are assumed to follow WGS84, see [the documentation on the varieties of location](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDGEOGva).
+
+[TEI documentation: \<placeName\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-placeName.html)
+
+Use the **name** element with the attribute type to indicate a newspaper. In Orwell's diary this may look something like.
+
+![](images/paste-2CE82EEC.png){fig-align="center"}
+
+[TEI documentation: \<name\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-name.html)
+
+You can encode **deleted** text via the del element. The rend attribute indicates how the deletion should be displayed when the document is rendered into PDF or HTML. For our purposes, we will treat deletions as an overstrike.
+
+![](images/paste-8B527B1E.png){fig-align="center"}
+
+[TEI documentation: <del>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-del.html)
+
+Text which has been added to the document is represented using the **add** element. We would usually indicate the position of the addition using the place attribute and render it as an insertion in outputs. For example, adding the word four by writing it above would be.
+
+![](images/paste-481664DD.png){fig-align="center"}
+
+[TEI documentation: \<add\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-add.html)
+
+Note the place indication of 'supralinear'. I have also indicated that this is the second in a series of actions using the seq attribute. In my document, I assume the number 4 is removed and then the word four is added above.
+
+![](images/paste-0AB37CA2.png){fig-align="center"}
+
+Finally, we can show text is highlighted (hi) by underline like so.
+
+![](images/paste-20FE8E7A.png){fig-align="center"}
+
+[TEI documentation: \<hi\>](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-hi.html)
+:::
